@@ -4,8 +4,8 @@ title: Agenda General
 nav_order: 1
 ---
 
-# Plan de capacitación 
-# Enero 2024 - Marzo 2024
+# Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores- (OLACEFS)
+# Enero 2024 - Abril 2024
 
 SERVIR-Amazonia implementará programas de entrenamietno ("Capacity-building") en Brasil, Colombia, Ecuador, y Perú durante la primera mitad de 2023. El objetivo principal de este programa es proveer entrenamiento en Sistemas de Información Geográfica (SIG) a actores regionales claves enfocado en capacidades y necesidades en tecnología geoespacial. Este programa: 
 
