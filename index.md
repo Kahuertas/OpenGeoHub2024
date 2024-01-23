@@ -16,7 +16,7 @@ procesarla son gratuitas. Actualmente, el principal obstáculo para el amplio us
 
 
 ## Objetivo
-Este programa busca desarrollar un entrenamiento que contará con un estudio de caso basado en las presiones antrópicas – deforestación, quemas, minería ilegal, carreteras ilegales, invasión de tierras - en las Tierras Indígenas (TI) y Unidades de Conservación (UC).  
+Este programa busca desarrollar un entrenamiento que contará con un estudio de caso basado en las presiones antrópicas – deforestación, quemas, minería ilegal, carreteras ilegales, invasión de tierras - en las Tierras Indígenas (TI) y Unidades de Conservación (UC). La formación se impartirá a alumnos que fueron nominados por las respectivas Entidades Fiscalizadoras Superiores y representan a los siguientes países: Argentina, Bolivia, Chile, Colombia, Costa Rica, Honduras, México, Nicaragua y Paraguay.  
 
 Durante las sesiones de entrenamiento los participantes aprenderán:
 1. Conceptos de SIG y el uso de QGIS.
