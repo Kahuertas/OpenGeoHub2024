@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Acceso a Datos
-parent: Introducción a Radar de Apertura Sintética (SAR)
+title: Obtención de datos matriciales (ráster)
+parent: 01_MODULO_1
 nav_order: 2
 ---
 
