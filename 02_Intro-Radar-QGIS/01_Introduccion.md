@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Introducción
-parent: Introducción a Radar de Apertura Sintética (SAR)
+parent: Módulo 1 - Obtención de datos y operaciones analíticas en la práctica
 nav_order: 1
 ---
 
