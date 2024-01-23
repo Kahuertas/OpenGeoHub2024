@@ -6,13 +6,13 @@ nav_order: 10
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/3a978e3a68796b1acde3045273cdfc24).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/b75cddf5652ea9d375b9f7e6d595cf12).
 
 # Clasificación Supervisada
 
 Las imágenes satelitáles con propiedades espectrales permiten agrupar o clasificar los diferentes objetos visibles según sus firmas espectrales. Para esto es necesario establecer cuáles elementos se desean clasificar y proporcionar datos georeferenciados que respalden a esos elementos en la imagen satelital. Esos datos se conocen en inglés como "ground-truth". Esto hace que la clasificación que se hará sea llamada "supervisada", debido a que se conocen los elementos a clasificar. Las clasificaciones son útiles para la elaboración de mapas sobre el uso de la tierra, cobertura vegetal, o habitats. Además, si se realizan clasificaciones en distintos periodos de tiempo se pueden incluso detectar cambios temporales.
 
-<img align="center" src="../../images/gee-avanzado/02_fig1-.png" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/02_fig1-.png" vspace="10" width="600">
 
 ### 1. Preparar imagen
 
@@ -34,7 +34,7 @@ var imagen = coleccion.filter(ee.Filter.eq('system:index','20220107T150719_20220
 // Visualizar
 Map.addLayer(imagen,{bands:['B4','B3','B2'],min:0,max:2000},'Imagen');
 ```
-<img align="center" src="../../images/gee-avanzado/02_fig2.png" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/02_fig2.png" vspace="10" width="600">
 
 ### 2. Preparar datos
 
@@ -47,11 +47,11 @@ Luego de seleccionar nuestra imagen, debemos preparar los datos que vamos a usar
 
 Seleccionamos algunos puntos (entre 50 y 60) para cada una de estas clases. En este ejemplo usamos un conjunto de puntos relativamente pequeño, ya que en las clasificaciones supervisadas más puntos robustecen los resultados y mejoran la clasificación.
 
-<img align="center" src="../../images/gee-avanzado/02_fig3.png" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/02_fig3.png" vspace="10" width="600">
 
 Al crear un conjunto de puntos por clase en GEE vemos que son almacenados en variables diferentes. Pero, los vamos a unir en una sola colección de Features, por eso los cambiamos de `Geometry` a `FeatureCollection`, y les asignamos una propiedad en comun, que en este caso la llamaremos "clase" y se le asignará un valor númerico entre 0 y 4 para identificar cada clase.
 
-<img align="center" src="../../images/gee-avanzado/02_fig4.png" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/02_fig4.png" vspace="10" width="600">
 
 El código será:
 
@@ -81,7 +81,7 @@ print('Puntos por Clase:',puntos.aggregate_histogram('clase'));
 
 Verificamos el numero de puntos por clase, que en su totalidad son 280 puntos.
 
-<img align="center" src="../../images/gee-avanzado/02_fig5.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig5.png" vspace="10" width="500">
 
 ### 3. Muestras espectrales + Partición de datos de entrenamiento y validación
 
@@ -106,7 +106,7 @@ var entrenamiento = random.filter(ee.Filter.lt('random', fraccion));
 var validacion = random.filter(ee.Filter.gte('random', fraccion));
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig6.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig6.png" vspace="10" width="500">
 
 ### 4. Entrenar modelo y clasificar imagen
 
@@ -125,7 +125,7 @@ var mapa = imagen.classify(clasificador);
 Map.addLayer(mapa, {min: 0, max: 4, palette: ['#106c00','#004dff','#93a313','#fffc9d','#ff0000']},'RF');
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig7.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig7.png" vspace="10" width="500">
 
 ### 5. Precisión de la clasificación
 
@@ -147,11 +147,11 @@ print('Precision Total Entrenamiento: ', errorMatrixTra.accuracy());
 print('Precision Total Validacion: ', errorMatrixVal.accuracy());
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig8.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig8.png" vspace="10" width="500">
 
 Lo que vemos en las matrices de error es que todos los datos predecidos concuerdan con los datos observados. Esto significa que el modelo fue un 100% acertado. Este valor es debido al poco numero de datos. Ahora, nos interesa calcular la precisión de la clasificación. Para esto se requiere que nos enfoquemos en la matriz de error de validación, que será con la que se compara y se mida la precisión. Existen otros dos términos importantes al hablar de estimaciones de precisión en clasificaciones supervisadas, estos son la precisión del productor y la precisión del usuario. Estas ayudan a estimar la precisión dentro de cada clase.
 
-<img align="center" src="../../images/gee-avanzado/02_fig9.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig9.png" vspace="10" width="500">
 
 En la imagen de arriba tomada de Congalton & Green (2009), se puede estimar la precisión de la clase "Deciduous" de dos formas: (1) Tomando el número total de unidades de muestreo clasificadas correctamente (65) divididas por el número total de unidades respectivas en los datos de validación (75), esto nos da como resultado una precisión de 87% (Precisión de Productor). (2) Por otro lado, si tomamos el número total de unidades de muestreo clasificadas correctamente (65) divididas por el número total de unidades clasificadas como "Deciduous" (115), tendremos una precisión de 57% (Precisión de Usuario). Esto nos demuestra lo diferentes que pueden ser ambas precisiones. Por lo tanto, en este ejemplo se demuestra que cada precisión estimada tiene su interpretación y hay que ser específico al presentar los resultados de una clasificación supervisada.
 
@@ -165,7 +165,7 @@ print('Producer Accuracy: ',producerAccuracy);
 print('User Accuracy: ',userAccuracy);
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig10.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig10.png" vspace="10" width="500">
 
 Como obtuvimos una precisión general del 100%, las precisiones por clase también seran de 100%.
 
@@ -236,7 +236,7 @@ var mapa = imgKernel.classify(clasificador);
 Map.addLayer(mapa, {min: 0, max: 4, palette: ['#106c00','#004dff','#93a313','#fffc9d','#ff0000']},'RF-Kernel');
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig11-.png" vspace="10" width="900">
+<img align="center" src="../images/gee-avanzado/02_fig11-.png" vspace="10" width="900">
 
 
 ## BONUS 3: Clasificación no supervisada
@@ -263,4 +263,4 @@ var result = imagen.cluster(clusterer);
 Map.addLayer(result, vis, 'Cluster');
 ```
 
-<img align="center" src="../../images/gee-avanzado/02_fig12.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/02_fig12.png" vspace="10" width="500">
