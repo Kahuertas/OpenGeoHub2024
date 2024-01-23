@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Introducción
-parent: Introducción a Radar de Apertura Sintética (SAR)
+title: Unidad 1: Análisis con QGIS de los datos de uso y cobertura del suelo
+parent: Unidad 1: Análisis con QGIS de los datos de uso y cobertura del suelo
 nav_order: 1
 ---
 
