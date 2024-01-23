@@ -14,36 +14,39 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 **Instructor(s):** Karen Huertas
 
 ### Temas / Topics
-09:00 – 10:30
+
+## Unidad 1: Introducción a los mapas temáticos
+
+🟡 Comunicar situaciones-problema, fundamentos de conclusiones o hallazgos por medio de geotecnologías
+
+🟡 Elaborar mapas temáticos técnicamente sencillos
+
+
+## Obtención de datos matriciales (ráster)
 	
-    Welcome and set up check
+🟡 Enumerar y describir los datos geoespaciales de tipo matricial (ráster) de interés para el control público
 
-    Radar overview: what is radar, what is SAR, how data is collected, key radar systems
+🟡 Conocer la disponibilidad y los métodos de acceso a las imágenes de satélite
 
-10:30 - 10:45
+🟡 Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas a través de download y plug in
+
+🟡 Identificar las dificultades de trabajar con información matricial (ráster): tamaño, calidad, costo, periodicidad, etc
+
+🟡 Describir las características, limitaciones y ventajas de los formatos más utilizados (TIFF, JPEG, CMP, BMP)
+
+
+## Operaciones de consulta y operaciones analíticas básicas
 	
-    Coffee break
+🟡 Realizar consultas y operaciones analíticas básicas utilizando un Sistema de Información Geográfica (SIG)
 
-10:45 – 11:30
-	
-    Accessing SAR data
+🟡 Reconocer la estructura sintáctica básica de SQL y los detalles de SQL espacial
 
-    Earthdata, Alaska Satellite Facility Data Search platforms
+🟡 Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas a través de download y plug in
 
-11:30 – 12:00
-	
-    SAR data processing: Challenge
+🟡 Construir una operación de consulta para buscar una relación espacial o temporal específica
 
-12:00 – 13:30
-	
-    Lunch
+🟡 Identificar situaciones en las que es posible el uso de Overlay
 
-13:30 – 14:30
-	
-    SAR data processing: Sentinel-1
-    
-    Opening and displaying Sentinel-1 SAR data
+🟡 Identificar situaciones en las que es posible el uso de Buffers
 
-14:30 –15:30
-	
-    SAR in QGIS: identifying water bodies
+🟡 Operaciones analíticas básicas (AM4)
