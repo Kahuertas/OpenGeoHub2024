@@ -1,4 +1,4 @@
----
+<!---
 layout: page
 title: "Módulo 1 - Obtención de datos y operaciones analíticas en la práctica"
 permalink: /02_Intro-Radar-QGIS
