@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Procesamiento de Datos
-parent: Introducción a Radar de Apertura Sintética (SAR)
+title: Operaciones de consulta y operaciones analíticas básicas
+parent: 01_MODULO_1
 nav_order: 3
 ---
 
