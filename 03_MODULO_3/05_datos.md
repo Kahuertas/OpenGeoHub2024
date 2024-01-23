@@ -6,7 +6,7 @@ nav_order: 5
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/bd206c4b6bf2c437a592bf8462fb1f3e).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/d8f905b628b9f943b83eed94e4e41b46).
 
 # Colecciones en Google Earth Engine
 
@@ -14,7 +14,7 @@ El archivo de datos públicos de Earth Engine incluye más de cuarenta años de 
 
 Las colecciones ráster y vectoriales que ofrece GEE pueden ser exploradas desde su catálogo [aquí](https://developers.google.com/earth-engine/datasets/), o buscadas por palabra clave en la barra de búsqueda superior del`code editor`.
 
-<img align="center" src="../../images/intro-gee/05_fig1.png" vspace="10" width="700"> 
+<img align="center" src="../images/intro-gee/05_fig1.png" vspace="10" width="700"> 
 
 ## Importar colecciones
 
@@ -22,11 +22,11 @@ Las colecciones pueden ser importadas llamandolas a través de la función que c
 
 Por ejemplo el ID de una de las colecciones de Sentinel-2 se puede visualizar en la parte inferior izquierda de la ventana de información de esa colección:
 
-<img align="center" src="../../images/intro-gee/05_fig2.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig2.png" vspace="10" width="600"> 
 
 De igual forma, una colección, imágen, o incluso datos vectoriales pueden ser importados desde nuestros Assets. Por ejemplo, el siguiente es un ee.FeatureCollection que contiene multiples polígonos de los Parques Nacionales Naturales de Colombia, el cual fue descargado, comprimido como ZIP y subido a GEE como SHP. Como se puede observar esta colección tiene metadatos asociados a cada Feature (o polígono). Este archivo se puede descargar desde el repositorio github [aquí](https://github.com/SERVIR-Amazonia/colombia-training/tree/ce5c227b1e0b05423c2ad7f2fe4a9b87cd14fb6d/files).
 
-<img align="center" src="../../images/intro-gee/05_fig3.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig3.png" vspace="10" width="600"> 
 
 ```javascript
 // Una colección puede ser importada desde el catálogo de GEE o nuestros Assets:
@@ -50,7 +50,7 @@ print('Propiedades Sentinel-2:',sentinel2.first().propertyNames()); // ImageColl
 print('Propiedades PNN:',pnn.first().propertyNames());              // FeatureCollection
 ```
 
-<img align="center" src="../../images/intro-gee/05_fig4.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/05_fig4.png" vspace="10" width="400"> 
 
 Adicionalmente, en objetos ráster podemos saber el nombre de las bandas disponibles:
 
@@ -92,7 +92,7 @@ var img = ee.Image("COPERNICUS/S2_SR_HARMONIZED/20220824T153619_20220824T153619_
 Map.addLayer(img,{bands:['B3'],min:0,max:2000},'Banda B3');
 ```
 
-<img align="center" src="../../images/intro-gee/05_fig5.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig5.png" vspace="10" width="600"> 
 
 Ahora podemos también visualizar combinaciones de bandas. Por ejemplo, para visualizar una imágen satelital en color real o RGB se usan las bandas en el rojo, verde y azul, en este orden específico.
 
@@ -101,7 +101,7 @@ Ahora podemos también visualizar combinaciones de bandas. Por ejemplo, para vis
 Map.addLayer(img,{bands:['B4','B3','B2'],min:0,max:2000},'RGB');
 ```
 
-<img align="center" src="../../images/intro-gee/05_fig6.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig6.png" vspace="10" width="600"> 
 
 Otras combinanciones de bandas que pueden explorar son las siguientes. Estas combinanciones pueden almacenarse en una variable separada y ser usadas dentro de `Map.addLayer`. Qué diferencias pueden observar?
 
@@ -126,7 +126,7 @@ var paleta = ['#0a0097','#1100ff','#00c3ff','#00ff21','#eeff00','#ff8300','#ff00
 Map.addLayer(dem,{min:0,max:4000,palette:paleta},'Elevacion');
 ```
 
-<img align="center" src="../../images/intro-gee/05_fig7.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig7.png" vspace="10" width="600"> 
 
 Las paletas de colores se pueden crear manualmente con tantos colores usted crea mejor. Sin embargo, existe un [repositorio](https://github.com/gee-community/ee-palettes) que ha creado diversas paletas predefinidas y pueden ser importadas a nuestro código. Primero debemos importar el paquete usando la función `require()`, cargamos una paleta de nuestro gusto, y visualizamos el resultado.
 
@@ -136,9 +136,9 @@ var paleta2 = repo.crameri.vik[10];
 Map.addLayer(dem,{min:0,max:4000,palette:paleta2},'Elevacion2');
 ```
 
-<img align="center" src="../../images/intro-gee/05_fig8.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig8.png" vspace="10" width="600"> 
 
 Finalmente, también podemos visualizar Features, e incluso darles un poco de color. Sin embargo, GEE no es una herramienta tan especializada como otros softwares geoespaciales que permiten seleccionar los elementos en tiempo real, mostrar etiquetas o información.
 
-<img align="center" src="../../images/intro-gee/05_fig9.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/05_fig9.png" vspace="10" width="600"> 
 
