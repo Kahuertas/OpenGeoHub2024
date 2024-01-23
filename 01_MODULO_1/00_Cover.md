@@ -25,9 +25,20 @@ Obtención de datos vectoriales
     Describir las características, limitaciones y ventajas de los formatos más utilizados 
     CSV, KML, GeoJSON, Zipped Shapefile, HTML
 
-10:30 - 10:45
+Obtención de datos matriciales (ráster)
 	
-    Coffee break
+    Enumerar y describir los datos geoespaciales de tipo matricial (ráster) de interés para el control público
+
+    Conocer la disponibilidad y los métodos de acceso a las imágenes de satélite
+
+    Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas 
+    a través de download y plug in
+
+    Identificar las dificultades de trabajar con información matricial (ráster): tamaño, calidad, costo,
+    periodicidad, etc
+
+    Describir las características, limitaciones y ventajas de los formatos más utilizados (TIFF, JPEG, CMP, BMP
+
 
 10:45 – 11:30
 	
