@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Operaciones de consulta y operaciones analíticas básicas
+title: Unidad 2 - Operaciones de consulta y operaciones analíticas básicas
 parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctica
 nav_order: 3
 ---
