@@ -6,7 +6,7 @@ nav_order: 7
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/de439e6931e183d11e8cd9c6b84b39a3).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/18fe24412d5bc21af09a0cf7cb53dc3e).
 
 # Enmascaramiento de nubes y funciones avanzadas
 
@@ -34,7 +34,7 @@ var image = ee.Image("COPERNICUS/S2_SR/20210118T152639_20210118T153102_T18NVM");
 
 Luego de seleccionar una imágen cualquiera de la lista, vamos a proceder a escalarla para poder obtener unidades de reflectancia correctas. Esto se puede verificar en la documentación de cada colección. No todas las colecciones tienen las mismas escalas o unidades, o incluso las bandas dentro de una misma colección pueden tener diferentes valores de escala. Esto hay que tenerlo presente y ser cuidadoso si vamos a usar imágenes sátelitales para análisis más avanzados.
 
-<img align="center" src="../../images/intro-gee/07_fig1.png" vspace="10" width="700"> 
+<img align="center" src="../images/intro-gee/07_fig1.png" vspace="10" width="700"> 
 
 Para Sentinel-2 el factor de escala en todas las bandas multiespectrales es de 0.0001. Vamos a usar la siguiente función para escalar las bandas multiespectrales. Sin embargo si solo hacemos esto, la función regresará una imágen con únicamente esas bandas. Por eso vamos a incluir otra línea de código para extraer las bandas QA que vamos a necesitar más adelante para enmascarar nubes.
 
@@ -61,7 +61,7 @@ Map.addLayer(img_scaled,params,'Imagen S2');
 
 La imagen fue escalada, y ahora el rango para visualizar la imágen RGB es 0 a 0.2, apróximadamente.
 
-<img align="center" src="../../images/intro-gee/07_fig2.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/07_fig2.png" vspace="10" width="600"> 
 
 La función para enmascarar nubes usará la banda QA. Este es uno de los procesos de enmascaramiento de nubes más accesible y sencillo, ya que usamos la banda QA, la cual significa que el producto ya ha sido procesado y se ha hecho una exploración indicando la presencia de nubes a nivel de pixel en cada imágen. Las bandas QA Bitmask son comúnes en productos L2 y superior. Estas bandas pueden tener varios nombres: QA: Quality assesment, QC: Quality control, QF: Quality flags y proveen información binaria sobre nubes, nieve, datos inválidos, etc, para cada pixel. Más información sobre las máscaras de bits en este [foro](https://stackoverflow.com/questions/31575691/what-is-a-bitmask-and-a-mask).
 
@@ -90,7 +90,7 @@ function maskS2clouds(image) {
 
 Como podemos observar, hemos usado la banda QA60, la cual provee información sobre nubes en los bits 10 y 11. 
 
-<img align="center" src="../../images/intro-gee/07_fig3.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/07_fig3.png" vspace="10" width="400"> 
 
 Estos bits son iguales a 1 + 10 ceros y 1 + 11 ceros, en números binarios respectivamente. Estos números binarios son iguales a los números 1024 y 2048. La máscara de la banda QA debe ser procesada usando el operador `bitWiseAnd` el cual debe tomar como argumento los números binarios que hemos creado en las variables `cloudBitMask` y `cirrusBitMask`. Esta operación va a identificar los píxeles marcados como 1 y 0, en los bits 1<<10 y 1<<11. Es decir que al final vamos a estar intereados en los valores de píxel igual a cero, ya que estos no estarán marcados como nubes o cirros, por esta razón usamos el operador `.eq(0)`, y finalmente aplicamos la máscara. Pueden encontrar un poco más de información sobre los operadores `Bitwise` [aquí](https://en.wikipedia.org/wiki/Bitwise_operation).
 
@@ -100,7 +100,7 @@ Ahora, veamos como se ve nuestra imagen luego de aplicar la función de enmascar
 Map.addLayer(maskS2clouds(img_scaled),params,'Imagen sin nubes');
 ```
 
-<img align="center" src="../../images/intro-gee/07_fig4.png" vspace="10" width="500"> 
+<img align="center" src="../images/intro-gee/07_fig4.png" vspace="10" width="500"> 
 
 Hasta ahora solo hemos aplicado funciones a una sola imagen (ee.Image), pero la verdadera ventaja de una función es su aplicabilidad a un conjunto
 de imágenes (ee.ImageCollection), a través de la función `.map()`.
@@ -147,7 +147,7 @@ var mosaico = coleccion_nubes.median();
 Map.addLayer(mosaico,params,'Mosaico');
 ```
 
-<img align="center" src="../../images/intro-gee/07_fig5.png" vspace="10" width="500"> 
+<img align="center" src="../images/intro-gee/07_fig5.png" vspace="10" width="500"> 
 
 El mosaico final quedó bastante limpio de nubes, pero algunas quedan aún. Esto es debido a que los algoritmos para detectar nubes no son perfectos y que la zona Andina y Pacífica de Colombia son lugares con muchas nubes a lo largo de todo el año. Por esto se dificulta obtener mosaicos sin nubes.
 
