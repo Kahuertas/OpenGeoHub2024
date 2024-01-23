@@ -16,7 +16,7 @@ procesarla son gratuitas. Actualmente, el principal obstáculo para el amplio us
 
 
 ## Objetivo
-Este programa busca desarrollar un entrenamiento más orgánico bajo el Programa incrementando el impacto de la estrategía de SERVIR-Amazonia a través de talleres, entrenamientos, y otras actividades para el desarrollo de capacidad en la Amazonía. Este entrenamiento esta diseñado en base a intereses específicos y relacionados a las cuatro áreas temáticas del programa SERVIR-Amazonia: Cobertura terrrestre, cambio en uso del suelo y ecosistemas, riesgos de incendio y sequías, agua y desastres relacionados con el agua, y tiempo y clima.  
+Este programa busca desarrollar un entrenamiento que contará con un estudio de caso basado en las presiones antrópicas – deforestación, quemas, minería ilegal, carreteras ilegales, invasión de tierras - en las Tierras Indígenas (TI) y Unidades de Conservación (UC).  
 
 Durante las sesiones de entrenamiento los participantes aprenderán:
 1. Conceptos de SIG y el uso de QGIS.
