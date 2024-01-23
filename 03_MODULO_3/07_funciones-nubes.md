@@ -2,7 +2,7 @@
 layout: page
 title: Máscara de Nubes y Funciones Avanzadas
 parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
-nav_order: 2
+nav_order: 7
 ---
 
 ## Script
