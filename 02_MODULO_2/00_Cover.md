@@ -10,10 +10,10 @@ nav_order: 2
 Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
 ## Agenda
-**Date**: April 25th, 2023
-**Instructor(s):** Erith & Jose Sanchez
+**Date**: Febrero 8th, 2024
+**Instructor(s):** Karen Huertas
 
-### Time / Topics
+### Temas / Topics
 09:00 – 10:30
 	
     Welcome and set up check
