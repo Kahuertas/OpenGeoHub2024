@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Introducción a Radar de Apertura Sintética (SAR)"
-permalink: /02_Intro-Radar-QGIS
+title: "Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctica"
+permalink: /01_MODULO_1
 has_children: True
 nav_order: 2
 ---
 
-# Introduction to Synthetic Aperture Radar (SAR)
+# OBTENCIÓN DE DATOS Y OPERACIONES ANALÍTICAS EN LA PRÁCTICA
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 
 ## Session Agenda
-**Date**: April 25th, 2023
-**Instructor(s):** Erith & Jose Sanchez
+**Date**: Enero 30th, 2024
+**Instructor(s):** Karen Huertas
 
 ### Time / Topics
 09:00 – 10:30
