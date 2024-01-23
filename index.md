@@ -11,9 +11,8 @@ Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Efica
 
 La iniciativa OpenGeoHub forma parte del esfuerzo que la OLACEFS viene emprendiendo desde 2016 en el sentido de desarrollar competencias geoespaciales de los funcionarios de las Entidades Fiscalizadoras Superiores (EFS) de la región.
 
-b) Ofrecerá entrenamiento en herramientas geoespaciales en demanda, principalemente en SIG. Los socios del grupo SAMZ son responsables del diseño e implementacón the actividades de entrenamiento nacionales, las cuales incuyen a la academia y actores regionales.
-
-c) Incorporará actividades de entrenamiento especial para mujeres y personas indígenas basado en sus intereses y necesidades locales.
+El costo de oportunidad derivado de no utilizar las geotecnologías en el control público se ha incrementado a medida que la variedad, cantidad y calidad de la información geoespacial ha aumentado exponencialmente, mientras que su costo de adquisición se ha reducido considerablemente. En muchos casos, esta información y la tecnología para 
+procesarla son gratuitas. Actualmente, el principal obstáculo para el amplio uso del geotecnologías en las EFS de la OLACEFS es la baja capacidad técnica de los servidores. Por ello, OpenGeoHub, además de desarrollar capacidades para el uso de la geotecnología, tiene como objetivo formar multiplicadores y desarrollar proyectos aplicados a casos de control concretos.
 
 
 ## Objetivo
