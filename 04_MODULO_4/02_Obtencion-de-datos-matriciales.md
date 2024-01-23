@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acceso a Datos
+title: Unidad 2 - Análisis con GEE de los datos de uso y cobertura del suelo
 parent: Módulo 4 - Proyecto Mapbiomas Amazonía y Mapbiomas Chaco
 nav_order: 2
 ---
