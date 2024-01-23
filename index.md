@@ -19,11 +19,11 @@ procesarla son gratuitas. Actualmente, el principal obstáculo para el amplio us
 Este programa busca desarrollar un entrenamiento que contará con un estudio de caso basado en las presiones antrópicas – deforestación, quemas, minería ilegal, carreteras ilegales, invasión de tierras - en las Tierras Indígenas (TI) y Unidades de Conservación (UC). La formación se impartirá a alumnos que fueron nominados por las respectivas Entidades Fiscalizadoras Superiores y representan a los siguientes países: Argentina, Bolivia, Chile, Colombia, Costa Rica, Honduras, México, Nicaragua y Paraguay.  
 
 Durante las sesiones de entrenamiento los participantes transitarán por 5 módulos:
-1. OBTENCIÓN DE DATOS Y OPERACIONES ANALÍTICAS EN LA PRÁCTICA.
-2. INTERPRETACIÓN Y COMUNICACIÓN DE LA INFORMACIÓN ESPACIAL.
-3. INTRODUCCIÓN A GOOGLE EARTH ENGINE (GEE).
-4. PROYECTO MAPBIOMAS AMAZONÍA Y MAPBIOMAS CHACO.
-5. DISEÑO PRÁCTICO Y APLICADO (MENTORÍA)
+1. Módulo 1: OBTENCIÓN DE DATOS Y OPERACIONES ANALÍTICAS EN LA PRÁCTICA.
+2. Módulo 2: INTERPRETACIÓN Y COMUNICACIÓN DE LA INFORMACIÓN ESPACIAL.
+3. Módulo 3: INTRODUCCIÓN A GOOGLE EARTH ENGINE (GEE).
+4. Módulo 4: PROYECTO MAPBIOMAS AMAZONÍA Y MAPBIOMAS CHACO.
+5. Módulo 5: DISEÑO PRÁCTICO Y APLICADO (MENTORÍA)
 
 ## Pre-requisitos
 Los participantes deberán tener:
