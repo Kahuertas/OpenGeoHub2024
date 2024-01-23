@@ -7,18 +7,22 @@ nav_order: 2
 ---
 
 # OBTENCIÓN DE DATOS Y OPERACIONES ANALÍTICAS EN LA PRÁCTICA
-Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
+Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
 ## Session Agenda
 **Date**: Enero 30th, 2024
 **Instructor(s):** Karen Huertas
 
-### Time / Topics
-09:00 – 10:30
+### Temas / Topics
+Obtención de datos vectoriales
 	
-    Welcome and set up check
+    Aprender a descargar la última versión estable de QGIS para Desktop
 
-    Radar overview: what is radar, what is SAR, how data is collected, key radar systems
+    Enumerar y describir los datos geoespaciales de tipo vectorial relacionados con políticas públicas
+
+    Recopilar información vectorial de interés para el control a través de download y plug in
+
+    Describir las características, limitaciones y ventajas de los formatos más utilizados CSV, KML, GeoJSON, Zipped Shapefile, HTML
 
 10:30 - 10:45
 	
