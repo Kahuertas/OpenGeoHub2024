@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Mapeo de Inundaciones
-parent: Google Earth Engine Intermedio - Parte 2
-nav_order: 1
+parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
+nav_order: 11
 ---
 
 ## Script
