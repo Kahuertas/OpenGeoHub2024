@@ -15,7 +15,7 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 
 ### Temas / Topics
 
-## Obtención de datos vectoriales
+## Unidad 1: Obtención de datos vectoriales
 
 🟡 Aprender a descargar la última versión estable de QGIS para Desktop
 
@@ -27,7 +27,7 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 
 
 
-## Obtención de datos matriciales (ráster)
+## Unidad 2: Obtención de datos matriciales (ráster)
 	
 🟡 Enumerar y describir los datos geoespaciales de tipo matricial (ráster) de interés para el control público
 
@@ -40,7 +40,7 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 🟡 Describir las características, limitaciones y ventajas de los formatos más utilizados (TIFF, JPEG, CMP, BMP)
 
 
-## Operaciones de consulta y operaciones analíticas básicas
+## Unidad 3: Operaciones de consulta y operaciones analíticas básicas
 	
 🟡 Realizar consultas y operaciones analíticas básicas utilizando un Sistema de Información Geográfica (SIG)
 
