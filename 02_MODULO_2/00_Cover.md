@@ -1,15 +1,15 @@
 ---
 layout: page
-title: "Introducción a Radar de Apertura Sintética (SAR)"
-permalink: /02_Intro-Radar-QGIS
+title: "Módulo 2 - Interpretación y comunicación de la información espacial"
+permalink: /02_MODULO_2
 has_children: True
 nav_order: 2
 ---
 
-# Introduction to Synthetic Aperture Radar (SAR)
-Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
+# INTERPRETACIÓN Y COMUNICACIÓN DE LA INFORMACIÓN ESPACIAL
+Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
-## Session Agenda
+## Agenda
 **Date**: April 25th, 2023
 **Instructor(s):** Erith & Jose Sanchez
 
