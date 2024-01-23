@@ -45,3 +45,17 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 🟡 Clasificaciones Supervisadas 
 
 🟡 Series de tiempo 
+
+
+## Unidad 3: Operaciones elementales en GEE 
+	
+🟡 Buscar y acceder a la información en el catálogo de imágenes (data catalog)
+
+🟡 Acceder y aplicar filtros a colecciones de imágenes (image collections)
+
+🟡 Crear mosaicos
+
+🟡 Exportar los resultados 
+
+🟡 Clipar (clipping)
+
