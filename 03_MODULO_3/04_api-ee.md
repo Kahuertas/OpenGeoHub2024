@@ -5,13 +5,13 @@ parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
 nav_order: 4
 ---
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/5c0c1eaa9d927e9e20ce2d66119d4b84).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/81f4f4bb5841b9ec2829f53621d5de49).
 
 # API de Earth Engine (Server Side)
 
 La API de Earth Engine es amplia y proporciona objetos y métodos para hacer de todo, desde operaciones matemáticas sencillas hasta algoritmos avanzados para el procesamiento de imágenes. En el Editor de código, puede cambiar a la pestaña `Docs` para ver las funciones de la API agrupadas por tipos de objetos (o en la [documentación de Earth Engine](https://developers.google.com/earth-engine/apidocs)). Las funciones de la API tienen el prefijo `ee` (por Earth Engine).
 
-<img align="center" src="../../images/intro-gee/fig15.png" vspace="10" width="300"> 
+<img align="center" src="../images/intro-gee/fig15.png" vspace="10" width="300"> 
 
 Las diferentes tipos de variables también pueden ser definidas usando el lenguaje del API (Server Side):
 
@@ -34,7 +34,7 @@ Anteriormente, aprendiste cómo almacenar números en variables, pero no cómo h
 
 Mirando la pestaña `Docs`, encontrará un grupo de métodos que se pueden llamar en un `ee.Number`. Expanda para ver las diversas funciones disponibles para trabajar con números. Verá la función `ee.Number` que crea un objeto de número de Earth Engine a partir de un valor. En la lista de funciones, hay una función de suma (`add`) para sumar dos números. Eso es lo que usas para sumar `a` y `b`.
 
-<img align="center" src="../../images/intro-gee/fig24.png" vspace="10" width="300"> 
+<img align="center" src="../images/intro-gee/fig24.png" vspace="10" width="300"> 
 
 Para sumar `a` y `b`, primero creamos un objeto `ee.Number` a partir de la variable a con `ee.Number(a)`. Y luego podemos usar la llamada `add(b)` para agregarle el valor de `b`. El siguiente código muestra la sintaxis e imprime el resultado que, por supuesto, es el valor 3.
 
@@ -47,7 +47,7 @@ Es posible que ya te hayas dado cuenta de que cuando aprendes a programar en Ear
 
 Aquí hay otro ejemplo para llevar este punto a casa. Supongamos que está trabajando en una tarea que requiere que cree una lista de años desde 1980 hasta 2020 con un intervalo de cinco años. Si se enfrenta a esta tarea, el primer paso es cambiar a la pestaña `Docs` y abrir el módulo `ee.List`. Navegue a través de las funciones y vea si hay alguna función que pueda ayudar. Notará una función `ee.List.sequence`. Al hacer clic en él, aparecerá la documentación de la función.
 
-<img align="center" src="../../images/intro-gee/fig25.png" vspace="10" width="500"> 
+<img align="center" src="../images/intro-gee/fig25.png" vspace="10" width="500"> 
 
 La función `ee.List.sequence` puede generar una secuencia de números desde un valor inicial dado hasta el valor final. También tiene un paso de parámetro opcional para indicar el incremento entre cada número. Podemos crear una `ee.List` de números que representen los años desde 1980 hasta 2020, contando de 5 en 5, llamando a esta función predefinida con los siguientes valores: `start` = 1980, `end` = 2020 y `step` = 5.
 
@@ -58,7 +58,7 @@ print(secuencia);
 
 El resultado impreso en el `Console` mostrará que la variable `secuencia` contiene la lista de años con el intervalo correcto.
 
-<img align="center" src="../../images/intro-gee/fig26.png" vspace="10" width="500"> 
+<img align="center" src="../images/intro-gee/fig26.png" vspace="10" width="500"> 
 
 ## Objetos más comunes en Earth Engine
 
@@ -66,7 +66,7 @@ Los conceptos fundamentales de Earth Engine con respecto a la teledetección inc
 
 - Geometría (`ee.Geometry`): El tipo de dato vectorial fundamental en Earth Engine. Línea / Punto / Polígono / etc.
 
-    <img align="center" src="../../images/intro-gee/fig10.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig10.png" vspace="10" width="150">
 
 ```javascript
 // ee.Geometry:
@@ -78,22 +78,22 @@ var polygon =
           [-74.20, 4.99]]], null, false);
 print('Geometry:',polygon); // La consola mostrará el tipo de objeto que es al imprimir una variable de estas. 
 ```
-<img align="center" src="../../images/intro-gee/04_fig1_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig1_.png" vspace="10" width="400"> 
 
 - Imagen (`ee.Image`): El tipo de dato raster fundamental en Earth Engine. Imagen con un grupo de bandas georreferenciadas. Cada banda tiene la su máscara, proyección, resolución, y una lista de propiedades que incluyen fecha, cuadro delimitador, etc.
 
-    <img align="center" src="../../images/intro-gee/fig8.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig8.png" vspace="10" width="150">
 
 ```javascript
 // ee.Image:
 var image = ee.Image("COPERNICUS/S2_SR/20200129T160509_20200129T160512_T17RLK");
 print('Image:',image);
 ```
-<img align="center" src="../../images/intro-gee/04_fig2_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig2_.png" vspace="10" width="400"> 
 
 - Colección de Imágenes (`ee.ImageCollection`): Una colección de imágenes
 
-    <img align="center" src="../../images/intro-gee/fig9.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig9.png" vspace="10" width="150">
 
 ```javascript
 // ee.ImageCollection:
@@ -101,12 +101,12 @@ var imageCollection = ee.ImageCollection("LANDSAT/LC09/C02/T1_L2").limit(5); //L
 print('ImageCollection:',imageCollection);
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig3_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig3_.png" vspace="10" width="400"> 
 
 - Feature (`ee.Feture`): Una geometria con propriedades. Línea / Punto / Polígono / etc,
 Lista de Propiedades
 
-    <img align="center" src="../../images/intro-gee/fig11.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig11.png" vspace="10" width="150">
 
 ```javascript
 // ee.Feature:
@@ -114,11 +114,11 @@ var feature = ee.Feature(polygon); // Podemos usar la geometría anterior para c
 print('Feature:',feature);
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig4_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig4_.png" vspace="10" width="400"> 
 
 - Colección de Features (`ee.FeatureCollection`): Una colección de Features (geometrias con propriedades)
 
-    <img align="center" src="../../images/intro-gee/fig12.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig12.png" vspace="10" width="150">
 
 ```javascript
 // ee.FeatureCollection:
@@ -126,12 +126,12 @@ var featureCollection = ee.FeatureCollection("USDOS/LSIB/2017").limit(50); //Lim
 print('FeatureCollection:',featureCollection);
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig5_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig5_.png" vspace="10" width="400"> 
 
 - Reductores (`ee.Reducer`): Objeto utilizado para agregaciones y cálculos numéricos (para bandas, séries temporales, features...)
 
-    <img align="center" src="../../images/intro-gee/fig13.png" vspace="10" width="150">
-    <img align="center" src="../../images/intro-gee/fig14.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig13.png" vspace="10" width="150">
+    <img align="center" src="../images/intro-gee/fig14.png" vspace="10" width="150">
 
 ```javascript
 // ee.Reducer:
@@ -139,7 +139,7 @@ var reducer = ee.Reducer.mean();
 print('Reducer:',reducer);
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig7_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig7_.png" vspace="10" width="400"> 
 
 - Filtros (`ee.Filter`): Objeto para filtrar colecciones de imágenes o features de acuerdo a sus propiedades.
 
@@ -149,7 +149,7 @@ var filter = ee.Filter.date('2022-01-01','2022-12-31');
 print('Filter:',filter); // Las fechas se muestran en formato de milisegundos.
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig6_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig6_.png" vspace="10" width="400"> 
 
 Para más informaciones acceder al [sitio EE de objetos y métodos](https://developers.google.com/earth-engine/guides/objects_methods_overview).
 
@@ -163,7 +163,7 @@ var promedio = eeList.reduce(reducer);         // Aplicando Reducer a un ee.List
 print('Promedio:',promedio);
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig8_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig8_.png" vspace="10" width="400"> 
 
 
 ## Objetos Geospaciales: Véctor & Ráster
@@ -175,11 +175,11 @@ var image = ee.Image("COPERNICUS/S2_SR_HARMONIZED/20230117T155519_20230117T15580
 Map.addLayer(image,{bands:['B4','B3','B2'],min:0,max:2000},'Raster');
 ```
 
-<img align="center" src="../../images/intro-gee/04_fig9_.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/04_fig9_.png" vspace="10" width="400"> 
 
 Por otro lado los objetos vectoriales en Earth Engine son todos aquellos que tienen una geometría de puntos, líneas, o polígonos, y además estan georreferenciados. Estos elementos tambien pueden contener información de forma tabular y pueden ser importados/exportados en formato SHP o CSV. Además estos objetos pueden ser creados manualmente en la pataforma de GEE con las herramientas de la barra superior izquierda en el mapa. Al crear una geometría nueva, se creará automaticamente una variable llamada `geometry` almacenada en la parte superior del `code editor`. Esta variable puede ser renombrada al dar click sobre su nombre.
 
-<img align="center" src="../../images/intro-gee/04_fig10_.png" vspace="10" width="600"> 
+<img align="center" src="../images/intro-gee/04_fig10_.png" vspace="10" width="600"> 
 
 
 ## Ejercicios
@@ -195,7 +195,7 @@ var satelite = ee.String('2A');
 
 *Sugerencia*: use la función `cat` del módulo `ee.String` para "concatenar" (unir) los dos `strings`. Encontrará más información sobre todas las funciones disponibles en la pestaña `Docs` del Editor de códigos.
 
-<img align="center" src="../../images/intro-gee/fig27.png" vspace="10" width="400"> 
+<img align="center" src="../images/intro-gee/fig27.png" vspace="10" width="400"> 
 
 ### Desafío 2
 
