@@ -6,7 +6,7 @@ nav_order: 8
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/6a81b204eaf3cb189c6b057a515f5bb8).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/b3b00a90aede72b2d24ef770d7d54eb0).
 
 # Productos ambientales y climáticos
 
@@ -51,7 +51,7 @@ Map.addLayer(prec,{min:0, max:750, palette:precPaleta},'Precipitacion');
 
 En solo unas líneas de código podemos visualizar nuestra imágen. En color más pálido los valores más bajos de precipitación (0 mm/mes) y en azul oscuro los valores más altos (750 mm/mes):
 
-<img align="center" src="../../images/intro-gee/08_fig1.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig1.png" vspace="10" width="500">
 
 ## Temperatura
 
@@ -79,7 +79,7 @@ Map.addLayer(tempEscala,{min:10, max:40, palette:tempPaleta},'Temperatura');
 
 Podemos observer en azul los pixeles con temperaturas más bajas (10 °C) y en rojo los pixeles más calientes (40 °C), correspondiente al mes de Marzo de 2023. Algunos vacíos de información se pueden observar, probablemente debido a la cantidad de nubes en esas regiones de Colombia.
 
-<img align="center" src="../../images/intro-gee/08_fig2.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig2.png" vspace="10" width="500">
 
 ## Vegetación
 
@@ -107,7 +107,7 @@ Map.addLayer(ndviEscala,{min:0, max:1, palette:ndviPaleta},'NDVI');
 
 El índice tiene un rango de valores de 0 a 1. Los valores más cercanos a 1 indican una mayor densidad de vegetación, visualizados en color verde más oscuro.
 
-<img align="center" src="../../images/intro-gee/08_fig3.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig3.png" vspace="10" width="500">
 
 ## Incendios
 
@@ -138,7 +138,7 @@ Map.addLayer(firePower, {min:3,max:180, palette:firePaleta}, 'Fire Power');
 
 Podemos observar los píxeles con probabilidad de ser un incendio, del menos intenso (amarillo) al más intenso (rojo).
 
-<img align="center" src="../../images/intro-gee/08_fig4.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig4.png" vspace="10" width="500">
 
 ## Monitoreo atmósferico de Copernicus
 
@@ -162,7 +162,7 @@ Map.addLayer(so2, {min:0.1,max:65,palette:atmPaleta}, 'Total Sulfur Dioxide');
 
 Notamos que la mayor concentración de SO2 en la columna de aire se localiza cerca al Nevado del Ruíz y un poco menos cerca al Nevado del Huila.
 
-<img align="center" src="../../images/intro-gee/08_fig5.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig5.png" vspace="10" width="500">
 
 # Extraer datos
 
@@ -176,7 +176,7 @@ var tuparro = pnn.filter(ee.Filter.eq('Nombre','EL TUPARRO'));
 Map.addLayer(macarena.merge(tuparro),{},'PNN'); // Unimos los dos features en uno usando 'merge'.
 ```
 
-<img align="center" src="../../images/intro-gee/08_fig6.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig6.png" vspace="10" width="500">
 
 Para evitar repetir el proceso de extracción imagen por imagen, vamos a unir todas las imágenes en una sola pero como diferentes bandas y vamos a renombrar cada banda respectiva.
 
@@ -191,15 +191,15 @@ var imgDatos = prec.rename('PREC')
 print(imgDatos);
 ```
 
-<img align="center" src="../../images/intro-gee/08_fig7.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig7.png" vspace="10" width="500">
 
 Ahora vamos a crear una función con la que vamos a extraer datos de todos los parámetros en una región específica. Esta función tiene tres argumentos: una imagen en formato `ee.Image`, una geometría `ee.Feature`, y un reductor `ee.Reducer`. Inicialmente se aplicará el reductor específico sobre la geometría dada. Esto nos regresará un diccionario con los resultados por cada banda.
 
-<img align="center" src="../../images/intro-gee/08_fig8.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig8.png" vspace="10" width="500">
 
 Posteriormente vamos a extraer los `keys()`, es decir los nombres de bandas. Esto será entregado como una lista:
 
-<img align="center" src="../../images/intro-gee/08_fig9.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig9.png" vspace="10" width="500">
 
 Luego, necesitamos extraer los valores y crear una tabla con dos columnas, una para el nombre de parámetro y otra para alojar los valores respectivos. Este tipo de tablas se crean en formato `ee.Feature`. Primero vamos usar una función que correrá por cada elemento alojado en la variable `keys` que contiene los nombres, y vamos a obtener programáticamente los valores alojados en el diccionario. Finalmente, se va a regresar un `ee.Feature` con las dos columnas y sus respectivos valores. Y por último, la función va a regresar un `ee.FeatureCollection`, que es el formato que necesitamos para exportar la tabla.
 
@@ -246,7 +246,7 @@ print('Medias Macarena',meanMacarena);
 print('Medias Tuparro',meanTuparro);
 ```
 
-<img align="center" src="../../images/intro-gee/08_fig10.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig10.png" vspace="10" width="500">
 
 Como podemos observar, el resultado es un `ee.FeatureCollection` con tres propiedades o columnas (la columna system:index siempre se creará por defecto), y cinco features o elementos. Cada feature aloja el nombre de parámetro y valor promedio calculado.
 
@@ -272,15 +272,15 @@ Export.table.toDrive({
 });
 ```
 
-<img align="center" src="../../images/intro-gee/08_fig11.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig11.png" vspace="10" width="500">
 
 Despues de correr nuestro script tendremos que ir a la pestaña `Tasks`. Unas vez enviadas las tareas podemos terminar de trabajar o apagar nuestro computador, ya que estar tareas quedarán corriendo en el servidor de GEE.
 
-<img align="center" src="../../images/intro-gee/08_fig12.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig12.png" vspace="10" width="500">
 
 Siempre podremos regresar a observar si la tarea ha finalizado o no:
 
-<img align="center" src="../../images/intro-gee/08_fig13.png" vspace="10" width="500">
+<img align="center" src="../images/intro-gee/08_fig13.png" vspace="10" width="500">
 
 # Retos
 * Hemos solo extraído promedios de cada parámetro, pero la precipitación se mide diferente. Cual reductor se debería usar?
