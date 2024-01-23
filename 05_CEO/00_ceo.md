@@ -1,4 +1,4 @@
----
+<!---COMENTARIO
 layout: page
 title: "Collect Earth Online - Evaluación de mapas"
 permalink: /05_CEO
