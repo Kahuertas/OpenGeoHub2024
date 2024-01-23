@@ -100,16 +100,6 @@ Algunas de las aplicaciones de GEE incluyen:
 - Monitoreo de la calidad del aire
 - Mapeo de cuerpos de agua
 
-Ejemplos de aplicaciones desarrollados por SERVIR basados o que utilizan GEE:
-
-- [RAMI](https://rami.servirglobal.net/) - SERVIR-Amazonia
-- [RLCMS](https://landcovermapping.org/en/landcover/) - SERVIR-Mekong & SERVIR-HKH
-- [Collect Earth Online](https://collect.earth) - SERVIR Global
-- [HYDRAFloods](http://hydrafloods-servir.adpc.net/mapviewer/) - SERVIR-Mekong
-- [EcoDash](http://ecodash-servir.adpc.net/) - SERVIR-Mekong
-- [Mapeo de Trigo](http://geoapps.icimod.org/afwheat/) - SERVIR-HKH
-- [Aptitud para Incendios](https://servir-amazonia.earthengine.app/view/aptitud-incendios) - SERVIR-Amazonia
-
 Ejemplos generales:
 
 - [Monitoreo de Fuegos en la Amazonia](https://gis-acca.users.earthengine.app/view/amazon-fire-tracker) - Monitoring of the Andean Amazon Project
