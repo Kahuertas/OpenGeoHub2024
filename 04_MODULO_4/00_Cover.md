@@ -1,49 +1,60 @@
 ---
 layout: page
-title: "Introducción a Radar de Apertura Sintética (SAR)"
-permalink: /02_Intro-Radar-QGIS
+title: "Módulo 4 - Proyecto Mapbiomas Amazonía y Mapbiomas Chaco"
+permalink: /04_MODULO_4
 has_children: True
-nav_order: 2
+nav_order: 3
 ---
 
-# Introduction to Synthetic Aperture Radar (SAR)
-Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
+# INTRODUCCIÓN A GOOGLE EARTH ENGINE (GEE)
+Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
-## Session Agenda
-**Date**: April 25th, 2023
-**Instructor(s):** Erith & Jose Sanchez
+## Agenda
+**Date**: Febrero 13th, 2024
+**Instructor(s):** Karen Huertas
 
-### Time / Topics
-09:00 – 10:30
+### Temas / Topics
+
+## Unidad 1: Potencialidades, arquitectura y componentes de GEE
+
+🟡 Reconocer los usos potenciales y las limitaciones de GEE
+
+🟡 Reconocer en líneas generales la arquitectura y los componentes de GEE
+
+🟡 Navegar por la interfaz (code editor, script manager, asset manager, interactive map)
+
+
+## Unidad 2: Fundamentos de JavaScript para GEE
 	
-    Welcome and set up check
+🟡 Introducción y creación de cuenta
 
-    Radar overview: what is radar, what is SAR, how data is collected, key radar systems
+🟡 Conceptos Javascript
 
-10:30 - 10:45
+🟡 API Earth Engine
+
+🟡 Colecciones y Visualización 
+
+🟡 Filtrado y Máscaras
+
+🟡 Máscara de Nubes y Funciones Avanzadas
+
+🟡 Productos Ambientales
+
+🟡 Índices
+
+🟡 Clasificaciones Supervisadas 
+
+🟡 Series de tiempo 
+
+
+## Unidad 3: Operaciones elementales en GEE 
 	
-    Coffee break
+🟡 Buscar y acceder a la información en el catálogo de imágenes (data catalog)
 
-10:45 – 11:30
-	
-    Accessing SAR data
+🟡 Acceder y aplicar filtros a colecciones de imágenes (image collections)
 
-    Earthdata, Alaska Satellite Facility Data Search platforms
+🟡 Crear mosaicos
 
-11:30 – 12:00
-	
-    SAR data processing: Challenge
+🟡 Exportar los resultados 
 
-12:00 – 13:30
-	
-    Lunch
-
-13:30 – 14:30
-	
-    SAR data processing: Sentinel-1
-    
-    Opening and displaying Sentinel-1 SAR data
-
-14:30 –15:30
-	
-    SAR in QGIS: identifying water bodies
+🟡 Clipar (clipping)
