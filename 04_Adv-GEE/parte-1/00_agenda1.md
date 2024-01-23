@@ -1,4 +1,4 @@
----
+<!---
 layout: page
 title: "Google Earth Engine Intermedio - Parte 1"
 permalink: /04_Adv-GEE/parte-1
