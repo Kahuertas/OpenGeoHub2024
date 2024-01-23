@@ -6,7 +6,7 @@ nav_order: 12
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/2e5d2b7fdbe442d217e3a535f45bb74e).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/cc6658cb498b659131f6e30a64c0c669).
 
 # Series de Tiempo & Objetos UI
 
@@ -121,11 +121,11 @@ print(tempChart);
 
 Esta gráfica debe ser imprimida para poder visualizarla. 
 
-<img align="center" src="../../images/gee-avanzado/04_fig1.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig1.png" vspace="10" width="500">
 
 La flecha en la esquina superior derecha nos permite abrir la gráfica en una ventana independiente y habilitará opciones para descargar los datos en formato CSV, SVG, y PNG, disponibles en la esquina superior derecha.
 
-<img align="center" src="../../images/gee-avanzado/04_fig2.png" vspace="10" width="900">
+<img align="center" src="../images/gee-avanzado/04_fig2.png" vspace="10" width="900">
 
 Sin embargo, estos datos diarios presentan vacíos de información y no son continuos. Un análisis más robusto sobre la temporalidad de la temperatura requiere procesar los datos para obtener promedios mensuales. Por lo tanto, aplicaremos la función para obtener estos datos:
 
@@ -171,7 +171,7 @@ tempChartMes.setOptions({
 print(tempChartMes);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig3.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig3.png" vspace="10" width="500">
 
 Opcionalmente, existe la posibilidad de obtener estos datos en forma de tabla `FeatureCollection`, los cuales pueden ser exportados a nuestro GDrive. Esta opción es la más recomendada si se desea trabajar con más datos, y datos que requieran análisis más profundos. La opción de visualizar datos en la consola de GEE es muy exploratorio y más intereactiva para el público.
 
@@ -197,7 +197,7 @@ var tempTabla = tempMes.map(getStats(puntos,mean)).flatten();
 print('Temperatura Mensual:',tempTabla);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig4.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig4.png" vspace="10" width="500">
 
 
 ## Serie de tiempo por área
@@ -257,7 +257,7 @@ precChartMes.setOptions({
 print(precChartMes);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig5.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig5.png" vspace="10" width="500">
 
 
 ## Correlación (Scatter plot)
@@ -348,7 +348,7 @@ var corrChart = ui.Chart.array.values({
 print(corrChart);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig6.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig6.png" vspace="10" width="500">
 
 
 ## BONUS: GIF animado y botón
@@ -378,7 +378,7 @@ var icono = ui.Thumbnail({
 Map.add(icono);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig7.gif" vspace="10" width="300">
+<img align="center" src="../images/gee-avanzado/04_fig7.gif" vspace="10" width="300">
 
 Otras funciones interactivas que nos ofrece GEE son los botones. Estos botones sirven para ejecutar acciones específicas. En este caso crearemos un botón y le asignaremos la función de generar un link para visualizar nuestro GIF en una ventana independiente y poder descargarlo si deseamos.
 
@@ -394,4 +394,4 @@ var boton = ui.Button({
 print(boton);
 ```
 
-<img align="center" src="../../images/gee-avanzado/04_fig8.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/04_fig8.png" vspace="10" width="500">
