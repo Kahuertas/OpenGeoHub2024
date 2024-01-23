@@ -24,11 +24,11 @@ Mientras escribe el código, es útil agregar un poco de texto para explicar el 
 
 El Editor de código también proporciona un acceso directo (Ctrl + / en Windows, Cmd + / en Mac) para comentar o descomentar varias líneas a la vez. Puede seleccionar varias líneas y presionar la combinación de teclas para hacer que todos sean comentarios. Pulse de nuevo para invertir la operación. Esto es útil cuando se depura el código para detener la ejecución de ciertas partes del script.
 
-<img align="center" src="../../images/intro-gee/03_fig1_.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig1_.png" vspace="10" width="600">
 
 Adicionalmente puede crear comentarios en bloque usando `/*` para abrir bloque y `*/` para cerrar bloque:
 
-<img align="center" src="../../images/intro-gee/03_fig2.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig2.png" vspace="10" width="600">
 
 ### Variables
 
@@ -44,7 +44,7 @@ Si imprime la variable `departamento`, obtendrá el valor almacenado en la varia
 ```javascript
 print(departamento);
 ```
-<img align="center" src="../../images/intro-gee/03_fig3.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig3.png" vspace="10" width="600">
 
 Cuando asigna un valor de texto, a la variable se le asigna automáticamente el tipo *string*. También puede asignar números a variables y crear variables de tipo *número*. El siguiente código crea una nueva variable llamada `poblacion` y le asigna un número como su valor.
 
@@ -66,7 +66,7 @@ print(ciudades);
 
 Si observa la salida en la Consola, verá "`List`" con una flecha de expansión (▹) al lado. Al hacer clic en la flecha, se expandirá la lista y se le mostrará su contenido. Notará que junto con los cuatro elementos de la lista, hay un número al lado de cada valor. Este es el índice de cada artículo. Le permite hacer referencia a cada elemento de la lista mediante un valor numérico que indica su posición en la lista.
 
-<img align="center" src="../../images/intro-gee/03_fig4.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig4.png" vspace="10" width="600">
 
 ### Objetos JavaScript
 
@@ -85,7 +85,7 @@ print(datosCiudad);
 
 El objeto se imprimirá en el `Console`. Puede ver que en lugar de un índice numérico, cada elemento tiene una etiqueta. Esto se conoce como la clave ('key') y se puede utilizar para recuperar el valor de un objeto.
 
-<img align="center" src="../../images/intro-gee/03_fig5.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig5.png" vspace="10" width="600">
 
 Una forma programática de saber exactamente que tipo de variable se esta usando es usar la función `ee.Algorithms.ObjectType()`:
 ```javascript
@@ -93,7 +93,7 @@ Una forma programática de saber exactamente que tipo de variable se esta usando
 print('Tipo de variale:', ee.Algorithms.ObjectType(departamento));
 print('Tipo de variale:', ee.Algorithms.ObjectType(poblacion));
 ```
-<img align="center" src="../../images/intro-gee/03_fig7.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig7.png" vspace="10" width="600">
 
 Típicamente se pueden manipular variables sencillas de manera similar a otro lenguaje de programación. Por ejemplo estas son algunas acciones sencillas que se pueden ejecutar sin usar lenguaje Earth Engine (Server Side) en exceso:
 
@@ -111,7 +111,7 @@ var selectDicc    = datosCiudad['coordenadas']  // Seleccionar un elemento de un
 print(selectDicc);
 ```
 
-<img align="center" src="../../images/intro-gee/03_fig8.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig8.png" vspace="10" width="600">
 
 ### Funciones
 
@@ -131,4 +131,4 @@ function saludo2(x){
 print(saludo2('Participantes'));
 ```
 
-<img align="center" src="../../images/intro-gee/03_fig6.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/03_fig6.png" vspace="10" width="600">
