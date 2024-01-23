@@ -49,8 +49,11 @@ Los participantes deberán tener:
 |          1       |  Obtención de datos vectoriales              | Enero 30  |   Virtual          |
 |         2-3      |  Obtención de datos matriciales (ráster) | Enero 30 - Febrero 1  |   Virtual     |
 |     4-5-6-7      |  Operaciones de consulta y operaciones analíticas básicas       | Febrero 1, 6 y 8|   Virtual |
-|         6-7      |  Introducción a los mapas temáticos  | Junio 5-6    |   Virtual             |
-|           8            |  Uso de Collect Earth Online para la evaluación de la precisión y la estimación de área no sesgada de los mapas.   | Junio 27     |   Virtual             |
-|          9-10          |  Procesamiento de imágenes de Drones                             | Julio 24-25  |   Virtual         |
-|           11           |  Sesión de Capstone y apoyo                                      | Julio 31     |   Virtual             |
+|         8        |  Introducción a los mapas temáticos  | Febrero 8    |   Virtual             |
+|         9        |  Fundamentos teóricos en análisis espaciotemporales   | Febrero 13     |   Virtual             |
+|         10       |  Potencialidades, arquitectura y componentes del GEE  | Febrero 13  |   Virtual         |
+|      11-19  |  Fundamentos de JavaScript para GEE      | Febrero 15 a 29     |   Virtual      |
+|       20-29       |  Operaciones elementales en GEE   | Febrero 29 a Marzo 19  |   Virtual         |
+|  30  |  Análisis con QGIS de los datos de uso y cobertura del suelo | Marzo 19 |   Virtual         |
+|      31-35  |  Análisis con GEE de los datos de uso y cobertura del suelo  | Marzo 21 a 28   |   Virtual      |
 
