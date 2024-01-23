@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Introducción
-parent: Introducción a Radar de Apertura Sintética (SAR)
+title: Unidad 1 - Introducción a los mapas temáticos
+parent: Módulo 2 - Interpretación y comunicación de la información espacial
 nav_order: 1
 ---
 
