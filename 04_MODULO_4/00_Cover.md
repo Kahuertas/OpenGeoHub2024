@@ -10,51 +10,21 @@ nav_order: 4
 Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
 ## Agenda
-**Date**: Febrero 13th, 2024
+**Date**: Marzo 19th, 2024
 **Instructor(s):** Karen Huertas
 
 ### Temas / Topics
 
-## Unidad 1: Potencialidades, arquitectura y componentes de GEE
+## Unidad 1: Análisis con QGIS de los datos de uso y cobertura del suelo
 
-🟡 Reconocer los usos potenciales y las limitaciones de GEE
+🟡 Exportar datos sobre las presiones antrópicas (pastos, agricultura, silvicultura, infraestructura y minería) en Unidades de Conservación y Tierras Indígenas a QGIS
 
-🟡 Reconocer en líneas generales la arquitectura y los componentes de GEE
+🟡 Crear informes sobre las presiones antrópicas basadas en las transiciones de cobertura del suelo desde 1985
 
-🟡 Navegar por la interfaz (code editor, script manager, asset manager, interactive map)
+🟡 Automatizar la elaboración de mapas con el uso de la funcionalidad Altas de QGIS
 
 
-## Unidad 2: Fundamentos de JavaScript para GEE
+## Unidad 2: Análisis con GEE de los datos de uso y cobertura del suelo
 	
-🟡 Introducción y creación de cuenta
+🟡 Adaptar el script proporcionado por Mapbiomas para generar recortes personalizados sobre el uso y la cobertura del suelo
 
-🟡 Conceptos Javascript
-
-🟡 API Earth Engine
-
-🟡 Colecciones y Visualización 
-
-🟡 Filtrado y Máscaras
-
-🟡 Máscara de Nubes y Funciones Avanzadas
-
-🟡 Productos Ambientales
-
-🟡 Índices
-
-🟡 Clasificaciones Supervisadas 
-
-🟡 Series de tiempo 
-
-
-## Unidad 3: Operaciones elementales en GEE 
-	
-🟡 Buscar y acceder a la información en el catálogo de imágenes (data catalog)
-
-🟡 Acceder y aplicar filtros a colecciones de imágenes (image collections)
-
-🟡 Crear mosaicos
-
-🟡 Exportar los resultados 
-
-🟡 Clipar (clipping)
