@@ -6,17 +6,17 @@ nav_order: 11
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/0d85ea8534468b4c04980a8d88455ae5).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/92a81fa255351f8c5cbb4e93806370c8).
 
 # Mapeo de Inundaciones
 
 Mapear areas inundadas puede ser logrado con imágenes multiespectrales, sin presencia de nubes y si los cuerpos de agua son directamente observados (no cubiertos por vegetación). Estas son limitaciones para las imágenes espectrales, pero no para las imágenes de radar de apertura sintética (SAR), ya que esta señal de radar es capaz de ir y volver a través de nubes y vegetación no tan densa para detectar cuerpos de agua o zonas inundadas. En GEE se encuentra la colección de [Sentinel-1](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) que desde 2014 provee datos a una frecuencia de 5.4 GHz (C-Band), a tres resoluciones de 10, 25, o 40 m por pixel, diferentes polarizaciones (HH, VV, VH, HV), y entrega una imagen cada 16 días, aproximadamente.
 
-<img align="center" src="../../images/gee-avanzado/03_fig1.png" vspace="10" width="800">
+<img align="center" src="../images/gee-avanzado/03_fig1.png" vspace="10" width="800">
 
 En esta práctica vamos a estudiar el evento de inundación causado por la Hidroeléctrica de Ituango (Hidroituango) en Colombia, ocurrido en Abril de 2018. La hidroeléctrica se situa sobre el cauce del río Cauca en el Municipio de Ituango (7.1345, -75.6624), la cual se empezó a construir en 2008 y el 28 de Abril de 2018 se empezaron operaciones sin haber sido terminada. Esto provocó un inundamiento descontrolado cauce arriba. Se estimó que el nivel del río cauce arriba subió más de 100 m en solo unos días, afectando poblaciones como la de Orobajo. 
 
-<img align="center" src="../../images/gee-avanzado/03_fig2.png" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/03_fig2.png" vspace="10" width="600">
 
 Preparamos algunas variables y colecciones que usaremos a lo largo del script. Cargamos también la [colección JRC de cuerpos de agua](https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_GlobalSurfaceWater) para visualizar el cauce del río Cauca. Esta colección provee la 'occurrencia' de un cuerpo de agua, por lo tanto los vamos a enmascarar con valores más altos de 40% de occurrencia para visualizar lo mejor posible el río.
 
@@ -40,7 +40,7 @@ var rios = ee.Image("JRC/GSW1_4/GlobalSurfaceWater")
 Map.addLayer(rios,{palette:['#001eff']},'Cuerpos de Agua');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig3.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig3.png" vspace="10" width="500">
 
 Ahora, cargamos y preparamos la colección de Sentinel-1
 
@@ -65,7 +65,7 @@ var sar = ee.ImageCollection("COPERNICUS/S1_GRD")
 print('Coleccion SAR:', sar);
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig4.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig4.png" vspace="10" width="500">
 
 Debido a que las imágenes son un poco "ruidosas" vamos a aplicar un kernel para la imagen SAR, preparamos una imagen de Sentinel-2 y otra de Sentinel-1 previas al evento de inundación, y visualizamos.
 
@@ -89,7 +89,7 @@ Map.addLayer(imgAntes, rgbVis, 'RGB_Antes');
 Map.addLayer(sarAntes, sarVis, 'SAR_Antes');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig5.png" vspace="10" width="900">
+<img align="center" src="../images/gee-avanzado/03_fig5.png" vspace="10" width="900">
 
 Posteriormente, procedemos a identificar las imagenes posteriores al evento de inundación y visualizamos.
 
@@ -103,7 +103,7 @@ Map.addLayer(imgDespues, rgbVis, 'RGB_Despues');
 Map.addLayer(sarDespues, sarVis, 'SAR_Despues');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig6.png" vspace="10" width="900">
+<img align="center" src="../images/gee-avanzado/03_fig6.png" vspace="10" width="900">
 
 ## Detección de Cambios
 
@@ -118,7 +118,7 @@ Map.addLayer(thr.selfMask(),{palette:'black'},'Area inundada');
 ```
 Se puede observar en negro las zonas detectadas como inundación, usando imágenes SAR.
 
-<img align="center" src="../../images/gee-avanzado/03_fig7.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig7.png" vspace="10" width="500">
 
 Sin embargo, debido al ruido que puede haber en estas imágenes SAR, vamos a tratar de "refinar" estas áreas sustrayendo y sobreponiendo pixeles identificados como el cauce del río en un estado anterior a la perturbación por la colección de JRC de cuerpos de agua. Con este paso reducimos un poco el sesgo al cuantificar las áreas inundadas.
 
@@ -132,7 +132,7 @@ var cambios = rioClip.add(diffRef.multiply(2)).selfMask();
 Map.addLayer(cambios,{palette:['blue','red'],min:1,max:2},'Area inundada Refinada');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig8.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig8.png" vspace="10" width="500">
 
 Al calcular las áreas inundadas detectadas por imagénes SAR, obtenemos un estimado de 7.25 km^2.
 
@@ -177,7 +177,7 @@ var demRiesgo = dem.lt(altitud + inundar).selfMask().clip(aoi);
 Map.addLayer(demRiesgo,{min:235, max:1760},'DEM inundado');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig9.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig9.png" vspace="10" width="500">
 
 Podemos refinar un poco el resultado sobreponiendo el cauce del río sobre las potenciales áreas en riesgo si el nivel sube 120 m.
 
@@ -188,7 +188,7 @@ var riesgo = demRiesgo.add(rioDEM); // Sumar la capa de riesgo con el cauce ante
 Map.addLayer(riesgo,{min:1, max:2, palette:['red','blue']},'DEM Riesgo');
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig10.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig10.png" vspace="10" width="500">
 
 Al cuantificar las áreas en potencial riesgo de inundación obtenemos un área de 17.35 km^2, aproximadamente. Este es casi 10 km^2 más alto que el estimado por las imágenes SAR. En términos generales, es positivo sobrestimar y no subestimar áreas en riesgo para prevenir desatres. Esta área encaja con el cauce del río posterior al evento de inundación, observado en la imágen de Sentinel-2.
 
@@ -251,10 +251,10 @@ var linker = ui.Map.Linker([mapIzq, mapDer]);
 mapIzq.centerObject(orobajo, 12);
 ```
 
-<img align="center" src="../../images/gee-avanzado/03_fig11.gif" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/03_fig11.gif" vspace="10" width="500">
 
 ## Ejercicio
 
 El 20 de Abril de 2022 se registraron inundaciones en el Municipio de Guarandá (Sucre) y alrededores, inundando poblados enteros por varios días. En este caso, las inundaciones se presentaron por desbordamientos del río Cauca y rupturas en los jarillones que lo bordean, afectando a toda la región conocida como La Mojana. El casco urbano de Guarandá se situa en lat: 8.47, lon: -74.55. Para este ejercicio, realizar el mismo procedimiento para mapear inundaciones, detectar cambios, y detectar areas en riesgo.
 
-<img align="center" src="../../images/gee-avanzado/03_fig12.jpg" vspace="10" width="600">
+<img align="center" src="../images/gee-avanzado/03_fig12.jpg" vspace="10" width="600">
