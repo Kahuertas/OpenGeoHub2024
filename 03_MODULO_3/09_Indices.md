@@ -6,7 +6,7 @@ nav_order: 9
 ---
 
 ## Script
-El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/a4779b6b5c99ee19153033f4663a41ac).
+El script completo que se usará en esta sección esta disponible [aquí](https://code.earthengine.google.com/7192aa64cd4a976ad95a2f666f91744c).
 
 # Índices y operaciones matématicas
 
@@ -61,7 +61,7 @@ Map.addLayer(compuesto,{bands:['SR_B4','SR_B3','SR_B2'],min:0,max:0.2},'Compuest
 
 Vamos a obtener un mosaico como el siguiente, con algunos vacios de información en la zona Andina de Colombia, pero con buena calidad en sur, este y norte.
 
-<img align="center" src="../../images/gee-avanzado/01_fig1.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig1.png" vspace="10" width="500">
 
 ## NDVI - Normalized Difference Vegetation Index:
 
@@ -73,7 +73,7 @@ $$\frac{(NIR-Rojo)}{(NIR+Rojo)}$$
 
 La relación entre las bandas NIR (infrarrojo cercano o Near-Infrared) y Rojo van a proporcionar un índice de vegetación.
 
-<img align="center" src="../../images/gee-avanzado/01_fig2.jpg" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig2.jpg" vspace="10" width="500">
 
 ```javascript
 // Calcular NDVI:
@@ -94,7 +94,7 @@ Map.addLayer(ndvi, {'palette': palette}, "NDVI");
 
 Otra alternativa para calcular indices normalizados es usar la función `normalizedDifference`. Para este ejemplo, nuestro NDVI podría ser calculado como `var ndvi = composite.normalizedDifference(['SR_B4', 'SR_B3'])`.
 
-<img align="center" src="../../images/gee-avanzado/01_fig3.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig3.png" vspace="10" width="500">
 
 ## EVI - Enhanced Vegetation Index:
 
@@ -120,7 +120,7 @@ var evi = compuesto.expression(
 Map.addLayer(evi, {'min': -1, 'max': 1, 'palette': ['FF0000', '00FF00']}, 'EVI');
 ```
 
-<img align="center" src="../../images/gee-avanzado/01_fig4.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig4.png" vspace="10" width="500">
 
 ## NDWI - Normalized Difference Water Index:
 
@@ -150,7 +150,7 @@ Map.addLayer(ndwi,{palette:'#0439ff'},'Agua');
 }
 ```
 
-<img align="center" src="../../images/gee-avanzado/01_fig5.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig5.png" vspace="10" width="500">
 
 Vamos a extraer una porción de nuestra capa de cuerpos de agua y la convertiremos en polígono usando la función `reduceToVectors`. Este es un proceso que puede ser computacionalmente intenso y no se recomienda hacerlo en tiempo real sobre cuerpos de agua extensos o que puedan terminar en geometrías con muchos vértices, ya que podriamos obtener un error. Por lo tanto, lo aplicaremos sobre una ciénaga la cual llamaremos `aoi2`.
 
@@ -168,7 +168,7 @@ var vector = ndwi.reduceToVectors({
 Map.addLayer(vector, {}, 'Cienaga')
 ```
 
-<img align="center" src="../../images/gee-avanzado/01_fig6.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig6.png" vspace="10" width="500">
 
 ## Calibrar datos
 
@@ -232,7 +232,7 @@ var calibrar = tempEscala.expression(
 Map.addLayer(calibrar, {min:10, max:40, palette:tempPaleta},'Temperatura Calibrada');
 ```
 
-<img align="center" src="../../images/gee-avanzado/01_fig7.png" vspace="10" width="800">
+<img align="center" src="../images/gee-avanzado/01_fig7.png" vspace="10" width="800">
 
 
 ## EJERCICIO
@@ -289,11 +289,11 @@ var image = modis.filterDate('2020-01-01','2020-01-31').map(maskModclouds)
 Map.addLayer(image,{bands:['sur_refl_b01','sur_refl_b04','sur_refl_b03',], min:0,max:0.15},'MODIS RGB');
 ```
 
-<img align="center" src="../../images/gee-avanzado/01_fig9.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig9.png" vspace="10" width="500">
 
 A partir de aqui aplicar la ecuación:
 
-<img align="center" src="../../images/gee-avanzado/01_fig8.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig8.png" vspace="10" width="500">
 
 donde:
 
@@ -305,7 +305,7 @@ donde:
 
 El resultado deberá verse similar a este, usando `var vis = {min:0,max:1.5,palette:['#0043ff','#00ff72','#fbff00','#ff0000']}`
 
-<img align="center" src="../../images/gee-avanzado/01_fig10.png" vspace="10" width="500">
+<img align="center" src="../images/gee-avanzado/01_fig10.png" vspace="10" width="500">
 
 ## SOLUCION
 ```javascript
