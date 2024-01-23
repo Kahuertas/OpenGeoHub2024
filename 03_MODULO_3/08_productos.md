@@ -2,7 +2,7 @@
 layout: page
 title: Productos Ambientales
 parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
-nav_order: 3
+nav_order: 8
 ---
 
 ## Script
