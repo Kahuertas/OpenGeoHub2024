@@ -17,7 +17,7 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 
 ## Obtención de datos vectoriales
 
-Aprender a descargar la última versión estable de QGIS para Desktop
+🟡 Aprender a descargar la última versión estable de QGIS para Desktop
 
 Enumerar y describir los datos geoespaciales de tipo vectorial relacionados con políticas públicas
 
