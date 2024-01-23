@@ -3,7 +3,7 @@ layout: page
 title: "Módulo 1 - Obtención de datos y operaciones analíticas en la práctica"
 permalink: /02_Intro-Radar-QGIS
 has_children: True
-nav_order: 2
+nav_order: 10
 ---
 
 # Introduction to Synthetic Aperture Radar (SAR)
