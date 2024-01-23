@@ -1,4 +1,4 @@
----
+<!---
 layout: page
 title: "Introducción a Google Earth Engine - Parte 2"
 permalink: /03_intro-GEE/parte-2
