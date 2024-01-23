@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Obtención de datos matriciales (ráster)
+title: Unidad 2 - Obtención de datos matriciales (ráster)
 parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctica
 nav_order: 2
 ---
