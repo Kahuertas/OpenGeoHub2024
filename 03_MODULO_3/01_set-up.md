@@ -11,7 +11,7 @@ nav_order: 1
 1. Primero necesitas una [cuenta Google](https://accounts.google.com/signup). Luego, crear una cuenta de [Google Earth Engine](https://code.earthengine.google.com/register) para fines no comerciales. 
 
 <p align="center">
-<img src="../../images/intro-gee/01_fig1.png" vspace="10" width="450">
+<img src="../images/intro-gee/01_fig1.png" vspace="10" width="450">
 <p/>
 
 <p align="center">
