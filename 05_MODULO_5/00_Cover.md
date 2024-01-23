@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Módulo 5 - Diseño práctico y aplicado "
+title: "Módulo 5 - Diseño práctico y aplicado"
 permalink: /05_MODULO_5
 has_children: True
 nav_order: 5
