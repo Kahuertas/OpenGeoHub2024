@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Series de Tiempo
-parent: Google Earth Engine Intermedio - Parte 2
-nav_order: 2
+parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
+nav_order: 12
 ---
 
 ## Script
