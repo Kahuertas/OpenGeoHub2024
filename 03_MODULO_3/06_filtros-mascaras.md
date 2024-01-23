@@ -2,7 +2,7 @@
 layout: page
 title: Filtrado y Máscaras
 parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
-nav_order: 1
+nav_order: 6
 ---
 
 ## Script
