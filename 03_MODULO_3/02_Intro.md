@@ -23,7 +23,7 @@ Google Earth Engine combina un catálogo de varios petabytes de imágenes sateli
 
 La infraestructura de procesamiento paraleliza automáticamente el análisis en muchos procesadores de muchas computadoras en los centros de datos de Google. Eso resulta en reducción de los tiempos de procesamiento en órdenes de magnitud mediante el uso de potencia informática distribuida y basada en la nube. Además los datos están todos centralizados en la nube.
 
-<img align="center" src="../../images/intro-gee/fig1.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig1.png" vspace="10" width="600">
 
 <font size=2> Fuente: Google </font>
 
@@ -63,7 +63,7 @@ Tipos de datos:
 - Clima y tiempo
 - Datos vectoriales (Cuencas, red de transporte, etc)
 
-<img align="center" src="../../images/intro-gee/fig2.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig2.png" vspace="10" width="600">
 
 <font size=2> Fuente: Google </font>
 
@@ -72,7 +72,7 @@ Para explorar todos los conjuntos de datos:
 - [https://developers.google.com/earth-engine/datasets](https://developers.google.com/earth-engine/datasets)
 - [https://developers.google.com/earth-engine/datasets/catalog](https://developers.google.com/earth-engine/datasets/catalog)
 
-<img align="center" src="../../images/intro-gee/fig3.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig3.png" vspace="10" width="600">
 
 <font size=2> Fuente: Google </font>
 
@@ -86,7 +86,7 @@ La API de Earth Engine está diseñada para ser independiente del idioma. Google
 
 Códigos pueden ser convertidos en aplicaciones mantenidas en Google Earth Engine. También puedes utilizar el API Python para desarrollar una aplicación web, con gran control de la interfaz del app.
 
-<img align="center" src="../../images/intro-gee/fig4.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig4.png" vspace="10" width="600">
 
 <font size=2> Aplicación Earth Engine: MODIS Ocean Temperature - Time Series Inspector. Fuente: https://google.earthengine.app/view/ocean. </font>
 
@@ -125,11 +125,11 @@ Ejemplos generales:
 
 El Editor de código (Code Editor) es un entorno de desarrollo integrado para la API JavaScript de Earth Engine. Ofrece una manera fácil de escribir, depurar, ejecutar y administrar código. Una vez que haya seguido la documentación de Google sobre el registro de una cuenta de Earth Engine, debe seguir la documentación para abrir el [Code Editor](https://code.earthengine.google.com/). Cuando visite por primera vez el Editor de código, verá una pantalla como la que se muestra abajo.
 
-<img align="center" src="../../images/intro-gee/fig5.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig5.png" vspace="10" width="600">
 
 El menú de la izquierda consta de tres pestañas: `Scripts`, `Docs`, `Assets`: En la sección Scripts tienes todo tu código almacenado y organizado en repositorios, carpetas, subcarpetas y archivos. Puede organizar sus scripts por proyecto y también puede compartir permisos de acceso o edición con otros usuarios de GEE. Docs es la [Documentación del API](https://developers.google.com/earth-engine/) con funciones y sus explicaciones. En Assets puedes almacenar y organizar archivos que carga desde su computadora o que descarga de GEE. En el centro, encontrará el editor de código basado en la web donde puede insertar su código JavaScript sin ninguna instalación previa de software. Con el botón `Apps`, puede desarrollar pequeñas aplicaciones automatizadas para procesar y visualizar datos de una manera e interfaz más fáciles de usar, mientras que el botón Run ejecuta el código. A la derecha, tenemos tres paneles principales: `Inspector`, `Console` y `Tasks`. En la zona Consola podemos ver errores de código o valores impresos, esto nos permite depurar nuestro script. Veremos la funcionalidad de estos a medida que realicemos los próximos ejercicios.
 
-<img align="center" src="../../images/intro-gee/fig7.png" vspace="10" width="700">
+<img align="center" src="../images/intro-gee/fig7.png" vspace="10" width="700">
 
 ## Ejercicio: mi primer script
 
@@ -141,26 +141,26 @@ print('Hello World');
 
 La línea de código anterior utiliza la función de impresión de JavaScript (`print`) para imprimir el texto "Hello World" en la pantalla. Una vez que ingrese el código, haga clic en el botón `Run`. La salida se mostrará en el panel superior derecho en la pestaña `Console`.
 
-<img align="center" src="../../images/intro-gee/fig16.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig16.png" vspace="10" width="600">
 
 Ahora sabe dónde escribir su código, cómo ejecutarlo y dónde buscar el resultado. Acabas de escribir tu primer script de Earth Engine, así que guardémoslo. Haga clic en el botón `Save`.
 
-<img align="center" src="../../images/intro-gee/fig17.png" vspace="10" width="600">
+<img align="center" src="../images/intro-gee/fig17.png" vspace="10" width="600">
 
 Si es su primera vez en Code Editor, una pantalla va a aparecer para crear su directorio principal: Su directorio principal es un ID único. Desde aquí puedes crear carpetas y repositorios de códigos. Puede elegir un nombre de su elección, pero recuerde que no se puede cambiar y siempre estará asociado con su cuenta. Una buena elección para el nombre sería el nombre de usuario de su cuenta de Google.
 
-<img align="center" src="../../images/intro-gee/fig6.png" vspace="10" width="400">
+<img align="center" src="../images/intro-gee/fig6.png" vspace="10" width="400">
 
 Una vez que se crea su carpeta de inicio, se le pedirá que ingrese a un nuevo repositorio. Un repositorio puede ayudarlo a organizar y compartir código. Su cuenta puede tener múltiples repositorios y cada repositorio puede tener múltiples scripts en su interior.
 
-<img align="center" src="../../images/intro-gee/fig18.png" vspace="10" width="400">
+<img align="center" src="../images/intro-gee/fig18.png" vspace="10" width="400">
 
 Finalmente, podrá guardar su script dentro del repositorio recién creado. Ingrese el nombre de su preferencia y haga clic en `OK`.
 
-<img align="center" src="../../images/intro-gee/fig19.png" vspace="10" width="400">
+<img align="center" src="../images/intro-gee/fig19.png" vspace="10" width="400">
 
 Una vez que se guarde el script, aparecerá en el panel del administrador de scripts (bajo `Owner`). Los scripts se guardan en la nube y siempre estarán disponibles para usted cuando abra el Editor de código.
 
-<img align="center" src="../../images/intro-gee/fig20.png" vspace="10" width="400">
+<img align="center" src="../images/intro-gee/fig20.png" vspace="10" width="400">
 
 ¡Felicitaciones! Has creado tu primer script.
