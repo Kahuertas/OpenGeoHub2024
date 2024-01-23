@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Introducción
-parent: Introducción a Radar de Apertura Sintética (SAR)
+title: Unidad 1 - Proyecto sobre presiones antrópicas en Tierras Indígenas (TI) y Unidades de Conservación (UC)
+parent: Módulo 5 - Diseño práctico y aplicado
+
 nav_order: 1
 ---
 
