@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Unidad 2 - Fundamentos teóricos en análisis espaciotemporales
-parent: Introducción a Radar de Apertura Sintética (SAR)
+parent: Módulo 2 - Interpretación y comunicación de la información espacial
 nav_order: 2
 ---
 
