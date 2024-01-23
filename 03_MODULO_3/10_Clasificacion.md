@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Clasificaciones Supervisadas
-parent: Google Earth Engine Intermedio - Parte 1
-nav_order: 2
+parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
+nav_order: 10
 ---
 
 ## Script
