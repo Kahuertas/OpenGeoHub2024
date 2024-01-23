@@ -44,9 +44,9 @@ Los participantes deberán tener:
 
 ## Agenda
 
-| Día de la Capacitación |                        Temática                                  |   Fecha      |        Formato        |
+| Sesión de la Capacitación |                        Temática                                  |   Fecha      |        Formato        |
 |:----------------------:|:----------------------------------------------------------------:|:------------:|:---------------------:|
-|          30 ene - 1 feb          |  Obtención de datos vectoriales                                       | Abril 10-11  |   Virtual          |
+|          1-2          |  Obtención de datos vectoriales                                       | 30 ene - 1 feb  |   Virtual          |
 |            3           |  Introducción a Radar con QGIS (radar para detección de inundación) | Abril 25     |   Virtual             |
 |           4-5          |  Introducción a Google Earth Engine                              | Mayo 15-16   |   Virtual             |
 |           6-7          |  Google Earth Engine Intermedio - Aplicado a casos (por ejemplo, Mapeo de inundación, estrés hídrico)   | Junio 5-6    |   Virtual             |
