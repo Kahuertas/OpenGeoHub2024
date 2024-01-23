@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Introducción a Radar de Apertura Sintética (SAR)"
-permalink: /02_Intro-Radar-QGIS
+title: "Módulo 5 - Diseño práctico y aplicado "
+permalink: /05_MODULO_5
 has_children: True
-nav_order: 2
+nav_order: 5
 ---
 
-# Introduction to Synthetic Aperture Radar (SAR)
+# DISEÑO PRÁCTICO Y APLICADO
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 
 ## Session Agenda
