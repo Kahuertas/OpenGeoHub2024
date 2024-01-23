@@ -22,31 +22,8 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 🟡 Elaborar mapas temáticos técnicamente sencillos
 
 
-## Obtención de datos matriciales (ráster)
+## Unidad 2: Fundamentos teóricos en análisis espaciotemporales
 	
-🟡 Enumerar y describir los datos geoespaciales de tipo matricial (ráster) de interés para el control público
+🟡 Interpretar situación-problema, indicador o irregularidad, por medio de geotecnología a lo largo de diversos períodos (espacio-tiempo)
 
-🟡 Conocer la disponibilidad y los métodos de acceso a las imágenes de satélite
-
-🟡 Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas a través de download y plug in
-
-🟡 Identificar las dificultades de trabajar con información matricial (ráster): tamaño, calidad, costo, periodicidad, etc
-
-🟡 Describir las características, limitaciones y ventajas de los formatos más utilizados (TIFF, JPEG, CMP, BMP)
-
-
-## Operaciones de consulta y operaciones analíticas básicas
-	
-🟡 Realizar consultas y operaciones analíticas básicas utilizando un Sistema de Información Geográfica (SIG)
-
-🟡 Reconocer la estructura sintáctica básica de SQL y los detalles de SQL espacial
-
-🟡 Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas a través de download y plug in
-
-🟡 Construir una operación de consulta para buscar una relación espacial o temporal específica
-
-🟡 Identificar situaciones en las que es posible el uso de Overlay
-
-🟡 Identificar situaciones en las que es posible el uso de Buffers
-
-🟡 Operaciones analíticas básicas (AM4)
+🟡 Analizar críticamente la información espacial consumida o producida por el control
