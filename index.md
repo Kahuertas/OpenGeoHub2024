@@ -56,4 +56,5 @@ Los participantes deberán tener:
 |       20-29       |  Operaciones elementales en GEE   | Febrero 29 a Marzo 19  |   Virtual         |
 |  30  |  Análisis con QGIS de los datos de uso y cobertura del suelo | Marzo 19 |   Virtual         |
 |      31-35  |  Análisis con GEE de los datos de uso y cobertura del suelo  | Marzo 21 a 28   |   Virtual      |
+| 36 | Proyecto sobre presiones antrópicas en Tierras Indígenas (TI) y Unidades de Conservación (UC)| Marzo 28  |   Virtual      |
 
