@@ -7,43 +7,20 @@ nav_order: 5
 ---
 
 # DISEÑO PRÁCTICO Y APLICADO
-Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
+Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
-## Session Agenda
-**Date**: April 25th, 2023
-**Instructor(s):** Erith & Jose Sanchez
+## Agenda
+**Date**: Marzo 28th, 2024
+**Instructor(s):** Karen Huertas
 
-### Time / Topics
-09:00 – 10:30
-	
-    Welcome and set up check
+### Temas / Topics
 
-    Radar overview: what is radar, what is SAR, how data is collected, key radar systems
+## Unidad 1: Proyecto sobre presiones antrópicas en Tierras Indígenas (TI) y Unidades de Conservación (UC)
 
-10:30 - 10:45
-	
-    Coffee break
+🟡 Orientación inicial del proyecto de análisis
 
-10:45 – 11:30
-	
-    Accessing SAR data
+🟡 Realizar, con el apoyo del mentor, análisis sobre las presiones antrópicas que inciden sobre Tierras Indígenas (TI) y Unidades de Conservación (UC) para determinado país
 
-    Earthdata, Alaska Satellite Facility Data Search platforms
+🟡 Presentar, de forma fundamentada, los análisis hechos a los demás colegas del curso y a los representantes de las Entidades Fiscalizadoras Superiores
 
-11:30 – 12:00
-	
-    SAR data processing: Challenge
 
-12:00 – 13:30
-	
-    Lunch
-
-13:30 – 14:30
-	
-    SAR data processing: Sentinel-1
-    
-    Opening and displaying Sentinel-1 SAR data
-
-14:30 –15:30
-	
-    SAR in QGIS: identifying water bodies
