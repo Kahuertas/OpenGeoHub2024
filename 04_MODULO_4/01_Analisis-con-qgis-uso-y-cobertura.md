@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Unidad 1: Análisis con QGIS de los datos de uso y cobertura del suelo
-parent: Unidad 1: Análisis con QGIS de los datos de uso y cobertura del suelo
+title: Unidad 1 - Análisis con QGIS de los datos de uso y cobertura del suelo
+parent: Módulo 4 - Proyecto Mapbiomas Amazonía y Mapbiomas Chaco
 nav_order: 1
 ---
 
