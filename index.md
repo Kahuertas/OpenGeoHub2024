@@ -7,9 +7,9 @@ nav_order: 1
 # Instrucción y mentoría para el desarrollo de competencias geoespaciales para el control público
 # Enero 2024 - Abril 2024
 
-Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores - (OLACEFS). Este programa: 
+Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores - (OLACEFS).
 
-a) Proveerá entrenamiento específico para servicios clave y tecnologías geoespaciales relacionadas a las áreas temáticas a lo largo de la región de la Amazonía. Este paquete de entrenamiento se enfocará en los servicios que han sido actualmente incluídos en el portafolio de SAMZ. 
+La iniciativa OpenGeoHub forma parte del esfuerzo que la OLACEFS viene emprendiendo desde 2016 en el sentido de desarrollar competencias geoespaciales de los funcionarios de las Entidades Fiscalizadoras Superiores (EFS) de la región.
 
 b) Ofrecerá entrenamiento en herramientas geoespaciales en demanda, principalemente en SIG. Los socios del grupo SAMZ son responsables del diseño e implementacón the actividades de entrenamiento nacionales, las cuales incuyen a la academia y actores regionales.
 
