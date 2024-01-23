@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Introducción a Radar de Apertura Sintética (SAR)"
-permalink: /02_Intro-Radar-QGIS
+title: "Módulo 3 - Introducción a Google Earth Engine (GEE)"
+permalink: /03_MODULO_3
 has_children: True
-nav_order: 2
+nav_order: 3
 ---
 
 # Introduction to Synthetic Aperture Radar (SAR)
