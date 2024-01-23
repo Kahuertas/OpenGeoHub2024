@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Filtrado y Máscaras
-parent: Introducción a Google Earth Engine - Parte 2
+parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
 nav_order: 1
 ---
 
