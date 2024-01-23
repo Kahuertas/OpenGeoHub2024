@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acceso a Datos
-parent: Introducción a Radar de Apertura Sintética (SAR)
+parent: Módulo 4 - Proyecto Mapbiomas Amazonía y Mapbiomas Chaco
 nav_order: 2
 ---
 
