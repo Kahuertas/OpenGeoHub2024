@@ -3,10 +3,10 @@ layout: page
 title: "Módulo 4 - Proyecto Mapbiomas Amazonía y Mapbiomas Chaco"
 permalink: /04_MODULO_4
 has_children: True
-nav_order: 3
+nav_order: 4
 ---
 
-# INTRODUCCIÓN A GOOGLE EARTH ENGINE (GEE)
+# PROYECTO MAPBIOMAS AMAZONÍA Y MAPBIOMAS CHACO
 Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
 ## Agenda
