@@ -40,4 +40,24 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 🟡 Describir las características, limitaciones y ventajas de los formatos más utilizados (TIFF, JPEG, CMP, BMP)
 
 
+## Operaciones de consulta y operaciones analíticas básicas
+	
+🟡 Realizar consultas y operaciones analíticas básicas utilizando un Sistema de Información Geográfica (SIG)
+
+🟡 Reconocer la estructura sintáctica básica de SQL y los detalles de SQL espacial
+
+🟡 Recopilar información matricial (ráster) que pueda ser relevante para el monitoreo de políticas públicas a través de download y plug in
+
+🟡 Construir una operación de consulta para buscar una relación espacial o temporal específica
+
+🟡 Identificar situaciones en las que es posible el uso de Overlay
+
+🟡 Identificar situaciones en las que es posible el uso de Buffers
+
+🟡 Operaciones analíticas básicas (AM4)
+
+
+
+
+
 
