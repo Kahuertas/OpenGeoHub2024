@@ -17,12 +17,14 @@ Navegue por las diferentes secciones de las lecciones utilizando el menú del la
 
 ## Obtención de datos vectoriales
 
+Aprender a descargar la última versión estable de QGIS para Desktop
+
 Enumerar y describir los datos geoespaciales de tipo vectorial relacionados con políticas públicas
 
 Recopilar información vectorial de interés para el control a través de download y plug in
 
-Describir las características, limitaciones y ventajas de los formatos más utilizados 
-CSV, KML, GeoJSON, Zipped Shapefile, HTML
+Describir las características, limitaciones y ventajas de los formatos más utilizados CSV, KML, GeoJSON, Zipped Shapefile, HTML
+
 
 
 ## Obtención de datos matriciales (ráster)
