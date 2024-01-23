@@ -9,14 +9,19 @@ nav_order: 2
 # OBTENCIÓN DE DATOS Y OPERACIONES ANALÍTICAS EN LA PRÁCTICA
 Navegue por las diferentes secciones de las lecciones utilizando el menú del lado izquierdo o la tabla de contenido a continuación.
 
-## Session Agenda
+## Agenda
 **Date**: Enero 30th, 2024
 **Instructor(s):** Karen Huertas
 
 ### Temas / Topics
-Obtención de datos vectoriales
+
+## Obtención de datos vectoriales
+Aprender a descargar la última versión estable de QGIS para Desktop
+
+Enumerar y describir los datos geoespaciales de tipo vectorial relacionados con políticas públicas
+
+
 	
-    Aprender a descargar la última versión estable de QGIS para Desktop
 
     Enumerar y describir los datos geoespaciales de tipo vectorial relacionados con políticas públicas
 
