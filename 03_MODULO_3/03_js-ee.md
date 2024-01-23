@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conceptos JavaScript
-parent: Introducción a Google Earth Engine - Parte 1
+parent: Módulo 3 - Introducción a Google Earth Engine (GEE)
 nav_order: 3
 ---
 
