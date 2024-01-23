@@ -42,11 +42,6 @@ nav_order: 15
 - [Awesome Earth Engine](https://github.com/giswqs/Awesome-GEE)
 - [Spatial Thoughts](https://courses.spatialthoughts.com/end-to-end-gee.html)
 
-## SAR
-
-- [El Handbook de SAR](https://servirglobal.net/Global/Articles/Article/2674/sar-handbook-comprehensive-methodologies-for-forest-monitoring-and-biomass-estimation)
-- Séries de Webinar de ARSET: [Introducción al Radar de Apertura Sintética](https://appliedsciences.nasa.gov/join-mission/training/english/arset-introduction-synthetic-aperture-radar) y muchos otros talleres de SAR
-- Alaska Satellite Facility (ASF): [Fundamentos de SAR](https://asf.alaska.edu/information/sar-information/fundamentals-of-synthetic-aperture-radar/)
 
 ## Detección de cambios
 
@@ -57,13 +52,5 @@ nav_order: 15
 - [CCDC-SMA](https://doi.org/10.1016/j.rse.2021.112648)
 - [Tutorial para el mapeo de disturbios forestales en la Amazonia Sudoccidental usando CODED, LandTrendr y MTDD](https://github.com/yreygadas/TutorialsToMapForestDisturbances/blob/master/MapeoDeDisturbiosForestalesTutorial_v1.pdf) ([Artículo](https://iopscience.iop.org/article/10.1088/2515-7620/ac2210))
 
-## Collect Earth Online
 
-- [Sitio web oficial](https://collect.earth)
-- [Guías](https://www.collect.earth/ceo-guides/)
-- [Manual de Creación de Institución y Proyectos](https://www.collect.earth/wp-content/uploads/2022/11/CEO_Manual_DataCollector_SP_20210720.pdf)
-- [Manual de Reccolección de Datos](https://www.collect.earth/wp-content/uploads/2022/11/CEO_Manual_InstitutionProject_SP_20210720.pdf)
-- [OpenMRV - Response Design in Collect Earth Online](https://openmrv.org/web/guest/w/modules/mrv/modules_3/response-design-in-collect-earth-online)
-- [AREA2](https://area2.readthedocs.io/en/latest/)
-- [Olofsson et al., 2014](https://www.sciencedirect.com/science/article/abs/pii/S0034425714000704)
 - [FAO - Map Accuracy Assessment and Area Estimation: A Practical Guide](https://www.fao.org/documents/card/en/c/e5ea45b8-3fd7-4692-ba29-fae7b140d07e)
