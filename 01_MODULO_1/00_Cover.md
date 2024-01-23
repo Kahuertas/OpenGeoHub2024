@@ -22,7 +22,8 @@ Obtención de datos vectoriales
 
     Recopilar información vectorial de interés para el control a través de download y plug in
 
-    Describir las características, limitaciones y ventajas de los formatos más utilizados CSV, KML, GeoJSON, Zipped Shapefile, HTML
+    Describir las características, limitaciones y ventajas de los formatos más utilizados 
+    CSV, KML, GeoJSON, Zipped Shapefile, HTML
 
 10:30 - 10:45
 	
