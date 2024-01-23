@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Unidad 1: Obtención de datos vectoriales
+title: Unidad 1 - Obtención de datos vectoriales
 parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctica
 nav_order: 1
 ---
