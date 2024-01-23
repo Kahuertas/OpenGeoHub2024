@@ -19,7 +19,7 @@ nav_order: 1
 <p/>
 
 <p align="center"> 
-<img src="../../images/intro-gee/01_fig2.png" vspace="10" width="450">
+<img src="../images/intro-gee/01_fig2.png" vspace="10" width="450">
 <p/>
 
 <p align="center">  
@@ -27,7 +27,7 @@ nav_order: 1
 <p/>
 
 <p align="center">
-<img src="../../images/intro-gee/01_fig3.png" vspace="10" width="450">
+<img src="../images/intro-gee/01_fig3.png" vspace="10" width="450">
 <p/>
 
 <p align="center">
@@ -35,7 +35,7 @@ nav_order: 1
 <p/>
 
 <p align="center">
-<img src="../../images/intro-gee/01_fig4.png" vspace="10" width="550">
+<img src="../images/intro-gee/01_fig4.png" vspace="10" width="550">
 <p/>
 
 <p align="center">
@@ -43,5 +43,5 @@ nav_order: 1
 <p/>
 
 <p align="center">
-<img src="../../images/intro-gee/01_fig5.png" vspace="10" width="450">
+<img src="../images/intro-gee/01_fig5.png" vspace="10" width="450">
 <p/>
