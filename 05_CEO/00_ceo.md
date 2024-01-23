@@ -3,7 +3,7 @@ layout: page
 title: "Collect Earth Online - Evaluación de mapas"
 permalink: /05_CEO
 has_children: True
-nav_order: 7
+nav_order: 
 ---
 
 # Collect Earth Online - Evaluación de mapas
