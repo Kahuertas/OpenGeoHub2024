@@ -66,7 +66,7 @@ Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos,
 | Formato| Ventajas | Limitaciones                              |
 |------|-----------------|------------------------------------------|
 | CSV: Los archivos CSV son archivos de texto plano donde las comas se utilizan para delimitar los datos. Son ampliamente utilizados en diversas industrias para intercambiar datos debido a su formato simple y estandarizado.   | Son eficientes para almacenar y transferir datos entre diferentes aplicaciones. Son fáciles de leer y procesar por la mayoría de las aplicaciones de software      | No tienen soporte nativo para almacenar información espacial. Para almacenar datos espaciales, generalmente se utilizan en combinación con otros formatos o estándares, como WKT (Well-Known Text) para representar geometrías.                     |
-| K    | 1.1 to 1.7      |                                          |
+| KML (Keyhole Markup Language) es un formato basado en XML utilizado para mostrar datos geográficos en navegadores terrestres como Google Earth. Permite a los usuarios crear y compartir información geoespacial, incluyendo puntos, líneas, imágenes, polígonos y modelos 3D    | A diferencia de un shapefile, un archivo KML puede definir simbología, etiquetado y transparencia. También es capaz de agregar superposiciones de iconos y gráficos      |  No tiene una tabla de atributos asociada y no puede producir una salida dinámica por sí solo, ya que es un lenguaje estático                                        |
 | Ku   | 1.7 to 2.4      | glaciology, snow cover mapping           |
 | X    | 2.4 to 3.8      | agriculture, ocean, high resolution data |
 | C    | 3.8 to 7.5      | ocean, agriculture                       |
