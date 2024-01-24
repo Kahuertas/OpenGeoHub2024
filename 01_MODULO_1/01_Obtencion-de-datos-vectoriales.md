@@ -39,18 +39,16 @@ Cuando la geometría de un objeto espacial consiste en un solo vértice, se cono
 <img align="center" src="../images/tiposdatosvectoriales.png"  vspace="10" width="300">
 
 ## Recopilación de información vectorial
-### Passive vs. Active Measurements
-This concept should sound familiar, as we briefly discussed it in the Introduction to Remote Sensing lesson. It is a key difference, however, so we will discuss it far more in depth here.
 
-Optical sensors are called passive sensors because they rely solely on energy from an outside source (e.g, the sun) to capture their measurements. This reliance on outside energy sources limits these sensors by the effects of the atmosphere. Energy that is simply reflected from the surface of the Earth cannot penetrate things such as cloud cover or fog, and thus makes it difficult to gather data consistently in areas that experience this type of weather often.
+Para recopilar información vectorial geoespacial, es posible utilizar varias herramientas y recursos. Algunos ejemplos:
 
-<img align="center" src="../images/intro-sar/passive-rs.png"  vspace="10" width="600">
-
-Diagram of passive remote sensing. *Source: NASA Applied Remote Sensing Training Program*
-
-Radar is a form of active remote sensing. These sensors provide their own artificial source of energy for illumination of the Earth’s surface, which can get through clouds, vegetation, and even soil depending on the type of signal they send down. Radars measure the energy that is reflected back from its own signal to generate an image of the surface of the Earth.
-
-Imaging radars are side-looking, which means they transmit energy at a 90 degree angle in order to differentiate between two objects on the ground. By transmitting energy at an angle, it allows energy to bounce off of objects on the ground and reach the radar at different times so that the two objects can be distinguished. 
+1. **MyGeodata Cloud:** Esta es una interfaz en línea donde puedes explorar datos de otros usuarios, cargar tus propios datos, administrarlos o mostrarlos en un mapa.
+2. **QGIS:** Es una herramienta de acceso abierto que pertenece a la categoría de Sistemas de Información Geográfica o GIS por sus siglas en inglés. Con QGIS, puedes abrir mapas digitales en la computadora, crear nueva información espacial y realizar análisis espacial.
+3. **R:**  R es un lenguaje de programación con enfoque al análisis estadístico. Hoy en día, R cuenta con un conjunto de librerías diseñadas exclusivamente para trabajar con datos geoespaciales.
+4. **Google Earth Engine:**  Contiene colecciones de datos cargadas por instituciones oficiales y datos de otros usuarios de manera colaborativa.
+5. **Open Street Map:**  Contiene colecciones de datos de superficie urbana de manera colaborativa.
+6. **SEDAC:**  Centro de datos de la NASA que provee datos socioeconómicos georreferenciados.
+7. **AIDDATA:** Extraer datos de límites administrativos.
 
 <img align="center" src="../images/intro-sar/side-looking-radar.png"  vspace="10" width="600">
 
@@ -59,13 +57,7 @@ Side-looking radar. *Source: Side looking airborne radar, Charly Whisky.*
 
 ### What do radars measure?
 
-**Radar components.** There are four primary parts of a radar system that allow it to collect information:
-1. **Transmitter.** This device outputs short bursts of microwave energy at regularly scheduled intervals. (The “active” part of active remote sensing!)
-2. **Antennae.** The antennae focuses the series of pulses from the radar into a beam that illuminates the surface at a right angle to the motion of the platform. 
-3. **Receiver.** The antennae receives the energy that is reflected, or *backscattered*, from the Earth’s surface. The time at which the energy is received by the antennae allows the system to pinpoint the location of the object it reflected off of.
-4. **Electronic processing system.** This system processes the backscattered signal to generate an image.
-
-In addition to the time at which the signal is received, which is referred to as the phase (a point in time in the position of the waveform) of the signal, radars also measure the amplitude (strength) of the reflected signal. Amplitude is called the *backscatter coefficient*, or $\sigma_{0}$, and is expressed as the fraction of the energy that is backscattered to the radar per unit target area. The value is measured in decibels (dB) and can range from around -25 dB (very little energy reflected back) to 1 dB (high amount of energy reflected back.
+Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos, incluyendo GeoJSON, shapefiles, MapInfo, GML, geodatabase, KML y otros formatos compatibles con la biblioteca GDAL2. Estos datos se pueden descargar y luego importar a las herramientas mencionadas anteriormente para su análisis y visualización.
 
 ### What is SAR?
 Radars possess two types of resolution: (1) **Range (across track) resolution** defines the ability of the radar to distinguish between two targets perpendicular to the path of the sensor that are close in range. This type of resolution is determined by length of pulse sent out by the transmitter. (2) **Azimuth (along-track) resolution** defines the ability of the radar to distinguish between two objects parallel to the path of the sensor that are close together. This resolution is determined by the beam length, which is inversely proportional to the length of the antennae, or aperture. 
