@@ -5,10 +5,18 @@ parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctic
 nav_order: 3
 ---
 
-# Data Processing
-One of the challenges associated with remote sensing data is the processing steps a user must go through in order to make the data analysis-ready. Radar data, specifically the side-looking characteristic of its data collection mechanism, presents its own specific set of processing challenges. Let’s explore those challenges and required corrective steps here.
+# Operaciones de consulta y operaciones analíticas básicas
+Los SIG permiten realizar consultas tanto espaciales como temáticas. Las consultas espaciales se refieren a la ubicación y la relación entre los objetos geográficos, mientras que las consultas temáticas se refieren a las propiedades de estos objetos. Esto incluye cálculos espaciales básicos, relaciones espaciales, estadísticas espaciales y medidas centrográficas. 
 
-## Data Distortion
+Entre algunas técnicas se encuentra: 
+
+Álgebra de mapas: Esta es una técnica comúnmente utilizada en los SIG para manipular y analizar datos ráster. Incluye operaciones como la suma, resta, multiplicación y división de mapas ráster. 
+
+Interpolación: Los SIG pueden utilizar técnicas de interpolación para estimar valores en ubicaciones no muestreadas basándose en los valores de ubicaciones muestreadas. 
+
+Geomorfometría y análisis del terreno: Los SIG permiten el análisis detallado del terreno, incluyendo la creación y preparación del Modelo Digital de Elevaciones (MDE), que es una representación digital de la superficie terrestre1.
+
+## Estructura Sintáctica básica de SQL y los detalles de SQL espacial
 The data values collected by SAR systems can be distorted in two primary ways: geometric and radiometric. 
 
 ### Geometric
