@@ -5,6 +5,9 @@ nav_order: 1
 ---
 
 # Instrucción y mentoría para el desarrollo de competencias geoespaciales para el control público
+
+<img align="center" src="../images/rondonia.gif" vspace="10" width="700"> 
+
 # Enero 2024 - Abril 2024
 
 Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores - (OLACEFS).
