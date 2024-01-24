@@ -22,18 +22,19 @@ Nota: Es importante mencionar que después de instalar QGIS, el primer intento d
 
 ## Datos geoespaciales de tipo vectorial relacionados con políticas públicas
 
+Los datos geoespaciales son un requisito previo para la buena formulación de políticas y el apoyo y seguimiento del progreso del desarrollo. La Agenda 2030 reconoce que la información geoespacial y estadística oportuna, disponible y accesible, ambas integradas con varios tipos de información adicional, son fundamentales para el seguimiento de los Objetivos de Desarrollo Sostenible. 
+
+### Tipos de datos vectoriales
 Los objetos espaciales vectoriales tienen atributos, que consisten en texto o información numérica que describe los objetos espaciales. Un objeto espacial tiene su forma representada utilizando geometría. La geometría se compone de uno o más vértices interconectados. Un vértice describe una posición en el espacio utilizando un eje X, Y y opcionalmente un eje Z.
 
-Cuando la geometría de un objeto espacial consiste en un solo vértice, se conoce como un elemento punto. Cuando la geometría consiste en dos o más vértices y el primer y último vértice no son iguales, se forma un elemento polilínea. Cuando tres o más vértices están presentes, y el último vértice es igual al primero, se forma un elemento polígono.
+Los datos vectoriales se caracterizan por representar características geográficas mediante puntos, líneas y polígonos. 
 
-### Pros and Cons of Radar
-Let’s start with the positive: what can radar achieve that optical remote sensing cannot?
+Cuando la geometría de un objeto espacial consiste en un solo vértice, se conoce como un elemento punto. Cuando la geometría consiste en dos o más vértices y el primer y último vértice no son iguales, se forma un elemento línea o polilínea. Cuando tres o más vértices están presentes, y el último vértice es igual al primero, se forma un elemento polígono.
 
-1. **“All-weather” monitoring.** Microwaves can penetrate through cloud cover, fog, and smoke, which makes radars a more reliable and consistent source of imagery in any given location. A majority of the globe experiences at least 50% cloud cover during a year, so this increased monitoring ability is massively helpful. This advantage also creates an opportunity for better disaster and wildfire management.
-2. **Day or night monitoring.** Radar doesn’t rely on energy from the sun to take its measurements, so imagery can be captured during the day or at night.
-3. **Vegetation and soil penetration.**  Microwaves can also penetrate through dense vegetation and soil, allowing the sensors to capture characteristics of the Earth that optical sensors cannot.
-4. **Minimal atmospheric effects.** Remember the many levels of processing optical remote sensing data must go through before it can be used? Radar data must also be pre-processed, but its longer wavelengths do not get affected by the same atmospheric conditions that can make optical imagery appear hazy or distorted.
-5. **Dielectric and structural sensitivity.** Radar data can pick up on the dielectric and structural properties of an object, which can make it easier to distinguish between liquid and frozen water, for instance.
+1. **Puntos** Los puntos se utilizan para representar características que se pueden ubicar con una única coordenada geográfica. Por ejemplo, podrían representar ubicaciones específicas como propiedades o ciudades.
+2. **Líneas** Las líneas, también conocidas como trayectorias, se utilizan para representar características lineales en el espacio geográfico. Por ejemplo, podrían representar carreteras o ríos.
+3. **Polígonos**  Los polígonos se utilizan para representar áreas. Estos son conjuntos de líneas que forman una forma cerrada. Por ejemplo, podrían representar áreas geográficas como montañas, masas de agua, o los límites de una ciudad.
+
 
 <img align="center" src="../images/intro-sar/radar-smoky-clear.gif"  vspace="10" width="600">
 
