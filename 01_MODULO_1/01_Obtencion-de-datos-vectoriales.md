@@ -7,12 +7,17 @@ nav_order: 1
 
 # Introducción - Obtención de datos vectoriales
 
-Welcome to an Introduction to Synthetic Aperture Radar (SAR)! This workshop will give an overview of radar remote sensing with a particular focus on SAR imagery. It will explore some methods for accessing, opening, reading, and displaying SAR images and share techniques for processing and filtering these radar images. To start off, this section will cover a number of fundamental radar concepts and provide a snapshot of key sensor types.
+Los datos vectoriales son una forma de representar características del mundo real dentro del entorno de un Sistema de Información Geográfica (SIG). Los objetos espaciales vectoriales tienen atributos, que consisten en texto o información numérica que describe los objetos espaciales. Un objeto espacial es algo que puede verse en el paisaje. 
 
 ## Descargar versión estable de QGIS
 1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
 2. En la sección de “Descargas de instalación”, encontrarás las opciones para diferentes sistemas operativos. Si estás usando Windows, debes hacer clic en `Descarga para Windows` o seleccionar Mac o Linux.
-3. En la página de descarga, tienes dos opciones: la versión más reciente (QGIS 3.34 ‘Prizren’) y la versión más estable a largo plazo (QGIS 3.28 ‘Firenze’).  `Recomendablemente descargar la versión más estable a largo plazo`. [Versión estable](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.msi). 
+3. En la página de descarga, tienes dos opciones: la versión más reciente (QGIS 3.34 ‘Prizren’) y la versión más estable a largo plazo (QGIS 3.28 ‘Firenze’).  `Recomendablemente descargar la versión más estable a largo plazo`. [Versión estable](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.msi).
+4. Una vez que hagas clic en el enlace de descarga, se descargará un archivo de instalación en tu computadora.
+5. Cuando la descarga se complete, abre el archivo de instalación y sigue las instrucciones para instalar QGIS.
+
+Nota: Es importante mencionar que después de instalar QGIS, el primer intento de inicio puede fallar debido a las protecciones de seguridad. Para habilitar QGIS, debes hacer clic con el botón derecho sobre su icono en la carpeta Aplicaciones y seleccionar ‘Abrir’ en el menú contextual. Aparecerá un cuadro de diálogo de confirmación en el que deberás hacer clic de nuevo en el botón ‘Abrir’. Esto sólo tiene que hacerse una vez.
+
 ## Objectives
 1. Understand how radar remote sensing differs from optical remote sensing.
 2. List the advantages and disadvantages of radar remote sensing. 
