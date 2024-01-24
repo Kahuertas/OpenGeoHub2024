@@ -5,12 +5,12 @@ parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctic
 nav_order: 1
 ---
 
-# Introduction
+# Introducción - Obtención de datos vectoriales
 
 Welcome to an Introduction to Synthetic Aperture Radar (SAR)! This workshop will give an overview of radar remote sensing with a particular focus on SAR imagery. It will explore some methods for accessing, opening, reading, and displaying SAR images and share techniques for processing and filtering these radar images. To start off, this section will cover a number of fundamental radar concepts and provide a snapshot of key sensor types.
 
-## Pre-workshop set-up
-1. Create an [Earthdata account](https://urs.earthdata.nasa.gov/users/new).
+## Descargar versión estable de QGIS
+1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
 2. Download [SNAP software](http://step.esa.int/main/download/snap-download/). Select the `Sentinel Toolboxes Main Download` option for your device type.
 3. Create a folder called `intro-radar-data` on your Desktop.
 
