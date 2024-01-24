@@ -8,21 +8,16 @@ nav_order: 2
 # Obtención de datos matriciales (ráster)
 Los datos matriciales, también conocidos como datos ráster, son uno de los dos tipos principales de datos geoespaciales, siendo el otro los datos vectoriales.
 
-## Earthdata 
-NASA’s Earthdata portal allows you to search through its free and open source collection based on keywords or collection type. The platform contains many tools you can use to figure out what type of data is available for your research project and the processing steps you need to use to make the data analysis ready.
+Los datos ráster son una forma de representar información geoespacial en un formato de cuadrícula. Cada celda en la cuadrícula representa un área específica en la superficie de la Tierra y contiene un valor que representa alguna característica de ese área. Los datos ráster son especialmente útiles para representar fenómenos continuos, como la elevación del terreno, la temperatura, la precipitación, etc.
 
-#### Exercise 1.1 Access SAR data using Earthdata search.
-1. Navigate to the Earthdata search page: [https://search.earthdata.nasa.gov/search](https://search.earthdata.nasa.gov/search)
-2. Login to your Earthdata account by clicking on the `Login` button in the upper right corner.
-3. In the search bar where it says `Search for collections or topics`, type in `SAR`.
-4. Select the `SENTINEL-1A_DUAL_POL_GRD_HIGH_RES` collection.
-5. Drag the map and zoom in to Amapá, Brazil (the northeastern most state of Brazil). 
-6. In the top panel on the right hand side, click on the point icon to `Search by spatial coordinate`. Select a point near the city Macapá.
-7. Select the granule with the following ID: `S1A_IW_GRDH_1SDV_20230120T090602_20230120T090627_046865_059EA0_7322`.
-8. To download the file, press the download button next to the green `+` button. Click on the name of the zip file under the `Download Files` tab and let the download complete. Move the zip file into the `intro-radar-data` folder.
+#### Características
+1. Estructura de cuadrícula: Los datos ráster se organizan en una estructura de cuadrícula donde cada celda o píxel contiene un valor.
+2. Representación de datos continuos: Los datos ráster son ideales para representar datos continuos como la elevación del terreno, la temperatura, etc.
+3. Resolución: La resolución de los datos ráster se refiere al tamaño de cada celda en la cuadrícula. Una resolución más alta significa que cada celda representa una menor área en la superficie de la Tierra, lo que resulta en un mayor nivel de detalle.
+4. Valores de celda: Cada celda en un ráster puede contener un valor que representa alguna característica de esa área en la superficie de la Tierra.
 
-## Alaska Satellite Facility DAAC
-The Earthdata portal also helps manage NASA’s Distributed Active Archive Centers (DAACs).The DAACs process, archive, document, and distribute data from NASA's past and current Earth-observing satellites and field measurement programs and often have particular types of data or applications associated with them. The DAAC for SAR data is hosted by the Alaska Satellite Facility (ASF). The ASF DAAC is located in the Geophysical Institute at the University of Alaska, Fairbanks and is supported by NASA to acquire, process, archive, and distribute SAR data from polar-orbiting satellite and airborne sensors to advance Earth science research. Most of the datasets available through the ASF DAAC are freely available and open for the public to download.
+## Interés para el control público
+La importancia de los datos ráster en los Sistemas de Información Geográfica (GIS) radica en su capacidad para representar datos geoespaciales de manera detallada y precisa. Los datos ráster permiten a los usuarios visualizar y analizar patrones geoespaciales y relaciones en los datos. Esto es especialmente útil en aplicaciones como la modelización del terreno, el análisis de la cobertura del suelo, la modelización del clima, entre otros. 
 
 The ASF DAAC is not limited to data from NASA-led satellite missions. It contains data from a wide range of satellites, including but not limited to: Sentinel-1, RADARSAT-1, European Remote Sensing Satellite-1 and -2 (ERS-1 and -2), ALOS PALSAR, Japanese Earth Resource Satellite-1 (JERS-1), SMAP, and Seasat, in addition to the airborne sensors AirSAR and UAVSAR.
 
