@@ -8,6 +8,8 @@ nav_order: 1
 
 <img align="center" src="../images/Rondonia.gif" vspace="10" width="300">
 
+<img align="center" src="../images/gee-avanzado/04_fig7.gif" vspace="10" width="300">
+
 # Enero 2024 - Abril 2024
 
 Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores - (OLACEFS).
