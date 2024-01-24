@@ -12,8 +12,7 @@ Welcome to an Introduction to Synthetic Aperture Radar (SAR)! This workshop will
 ## Descargar versión estable de QGIS
 1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
 2. En la sección de “Descargas de instalación”, encontrarás las opciones para diferentes sistemas operativos. Si estás usando Windows, debes hacer clic en `Descarga para Windows` o seleccionar Mac o Linux.
-3. Create a folder called `intro-radar-data` on your Desktop.
-
+3. En la página de descarga, tienes dos opciones: la versión más reciente (QGIS 3.34 ‘Prizren’) y la versión más estable a largo plazo (QGIS 3.28 ‘Firenze’).  `Recomendablemente descargar la versión más estable a largo plazo`. [Versión estable](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.msi). 
 ## Objectives
 1. Understand how radar remote sensing differs from optical remote sensing.
 2. List the advantages and disadvantages of radar remote sensing. 
