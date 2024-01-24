@@ -57,25 +57,13 @@ Para recopilar información vectorial geoespacial, es posible utilizar varias he
 The Global Administrative Unit Layers (GAUL). *Source: United Nations & FAO, GEE.* 
 
 
-### What do radars measure?
+### Características, Límitaciones y Ventajas
 
 Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos, incluyendo GeoJSON, shapefiles, MapInfo, GML, geodatabase, KML y otros formatos compatibles con la biblioteca GDAL2. Estos datos se pueden descargar y luego importar a las herramientas mencionadas anteriormente para su análisis y visualización.
 
-### What is SAR?
-Radars possess two types of resolution: (1) **Range (across track) resolution** defines the ability of the radar to distinguish between two targets perpendicular to the path of the sensor that are close in range. This type of resolution is determined by length of pulse sent out by the transmitter. (2) **Azimuth (along-track) resolution** defines the ability of the radar to distinguish between two objects parallel to the path of the sensor that are close together. This resolution is determined by the beam length, which is inversely proportional to the length of the antennae, or aperture. 
+### Formatos más utilizados
 
-<img align="center" src="../images/intro-sar/sar-resolution.png"  vspace="10" width="600">
-
-SAR resolution. *Source: MathWorks*
-
-A longer antennae, then, results in a narrower beam and thus finer resolution. Sending extremely long antennas out into space, however, is highly unrealistic. Instead, scientists leveraged the Doppler shift associated with the motion of the aircraft to simulate a very long antennae. This simulation creates a “synthetic aperture.” Synthetic aperture radar, or SAR, is able to generate higher resolution images compared to the actual length of the antennae. 
-
-### Choosing the Right Type of Radar
-There are plenty of different characteristics that distinguish sensors from each other, but the three most common factors to consider are listed below. 
-
-**Wavelength.** The length of the wave really determines how the beam will interact with the surface of the Earth, and thus what type of information you can ascertain from the image. The most significant aspect it affects is how far the beam can penetrate the surface. Longer wavelengths can penetrate through forest canopy or soil more effectively. The table below shows the different wavelength bands used, the name for each one, and some common applications. Note that the names of the wavelength bands are somewhat random and hard to follow – this is on purpose! For a long time radar data was used only by the military, so they selected names for the bands to hinder anyone from figuring out what each band represented. 
-
-| Band | Wavelength (cm) | Application                              |
+| Formato| Ventajas | Limitaciones                              |
 |------|-----------------|------------------------------------------|
 | Ka   | 0.8 to 1.1      | high resolution data                     |
 | K    | 1.1 to 1.7      |                                          |
