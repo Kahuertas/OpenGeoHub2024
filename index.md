@@ -6,7 +6,7 @@ nav_order: 1
 
 # Instrucción y mentoría para el desarrollo de competencias geoespaciales para el control público
 
-<img align="center" src="../images/rondonia.gif" vspace="10" width="700"> 
+<img align="center" src="../images/rondonia.gif" vspace="10" width="300">
 
 # Enero 2024 - Abril 2024
 
