@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Obtención de datos matriciales (ráster)
-You can access SAR data from a number of different data portals. SAR data is available on both of the platforms we explored in the Introduction to Remote Sensing lesson: EarthExplorer and Copernicus Open Access Hub. In this lesson, however, we will examine two other data sources that are particularly useful for SAR data.
+Los datos matriciales, también conocidos como datos ráster, son uno de los dos tipos principales de datos geoespaciales, siendo el otro los datos vectoriales.
 
 ## Earthdata 
 NASA’s Earthdata portal allows you to search through its free and open source collection based on keywords or collection type. The platform contains many tools you can use to figure out what type of data is available for your research project and the processing steps you need to use to make the data analysis ready.
