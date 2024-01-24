@@ -19,33 +19,45 @@ Los datos ráster son una forma de representar información geoespacial en un fo
 ## Interés para el control público
 La importancia de los datos ráster en los Sistemas de Información Geográfica (GIS) radica en su capacidad para representar datos geoespaciales de manera detallada y precisa. Los datos ráster permiten a los usuarios visualizar y analizar patrones geoespaciales y relaciones en los datos. Esto es especialmente útil en aplicaciones como la modelización del terreno, el análisis de la cobertura del suelo, la modelización del clima, entre otros. 
 
-#### Exercise 1.2 Access SAR data using the ASF DAAC.
-1. Navigate the ASF Data Portal: [http://vertex.daac.asf.alaska.edu/](http://vertex.daac.asf.alaska.edu/)
-2. In the upper search panel, set the `Search Type` to `Geographic Search` and the `Dataset` to `Sentinel-1`. 
-3. Click on the `Filters` button.
-    1. Under the `Area of Interest` field, input  `POLYGON((-50.985 -0.8565,-50.0179 -0.8565,-50.0179 0.0347,-50.985 0.0347,-50.985 -0.8565))`. Note that as an alternative, you could upload a shapefile for the specific area you are interested in, or draw an area of interest on the map directly.
-    2. Under the `Date Filters` field, input `1/1/2023` as the `Start Date` and `1/25/2023` as the `End Date`. 
-4. Click `Search`.
-5. Select the first image result. Note that this is the same image as the one we found with the Earthdata search (you can check the granule IS). Feel free to explore the other images the search returned by scrolling through the results.
-6. In the right-hand `Scene Detail` panel, you can read about the metadata of the image, view the image in the image viewer, or download the image. Click on the icon that looks like an eye to `Open in Image Viewer`. 
-7. *Do not complete this step. It is the same file you downloaded in the previous exercise.* Click on the `L1 Detected High-Res Dual-Pol (GRD-HD)` product. Download the image product file.
+### Disponibilidad y métodos de acceso 
+La disponibilidad de imágenes de satélite es amplia y accesible gracias a varias plataformas y proveedores.Estas plataformas ofrecen una variedad de métodos de acceso a las imágenes de satélite, incluyendo la búsqueda por zona, fecha y porcentaje de nubosidad, así como la descarga de imágenes individuales o en bloque. Es importante tener en cuenta que, aunque muchas de estas imágenes son gratuitas, algunas pueden requerir pago o suscripción para acceder a ellas.
 
-## Sentinel-1 File Naming
-The file names of Sentinel-1 data products follow a specific naming convention that provides information about the product and the acquisition conditions. The format of the Sentinel-1 file names is as follows:
+1. **USGS EarthExplorer:** Esta plataforma ofrece una enorme colección de datos satelitales gratuitos. La selección de imágenes satelitales en EarthExplorer es abrumadora, desde datos ópticos y de radar hasta imágenes de satélites meteorológicos y mapas digitales de elevación. Para descargar grandes cantidades de imágenes satelitales gratuitas de la Tierra obtenidas por satélites del USGS, tendrás que instalar la aplicación Bulk Download.
+2. **OSDA LandViewer:** Esta plataforma permite buscar, procesar y obtener información valiosa de los datos de satélite para abordar problemas comerciales reales. Con EOSDA LandViewer, ahora es más fácil que nunca encontrar y descargar la imagen satelital en vivo que necesitas, buscar combinaciones de bandas o cualquier imagen satelital actualizada o histórica.
+3. **Google Earth Engine:**  Combina más de 40 años de imágenes de satélite del planeta, tanto históricas como actuales, junto con las herramientas y la potencia computacional necesarias para analizar y extraer información de este enorme almacén. La disponibilidad de imágenes de satélite en Google Earth Engine es amplia, ya que combina un catálogo multi-petabyte de imágenes de satélite y conjuntos de datos geoespaciales con capacidades de análisis a escala planetaria. El archivo de datos públicos incluye más de treinta años de imágenes históricas y conjuntos de datos científicos, actualizados y ampliados diariamente. En cuanto a los métodos de acceso, Google Earth Engine ofrece una API disponible en Python y JavaScript, lo que facilita el aprovechamiento del poder de la nube de Google para tu propio análisis geoespacial. Además, cuenta con un editor de código basado en la web para un desarrollo rápido e interactivo de algoritmos con acceso instantáneo a petabytes de datos
 
-`S1[A/B]_[IW/EW]_[TTTR]_[YYYYMMDD]T[HHMMSS]_[YYYYMMDD]T[HHMMSS]_[OOOOOO]_[DDDDDD]_[CCC].zip`
 
-* `S1[A/B]`: Indicates the Sentinel-1 satellite, where A stands for Sentinel-1A and B for Sentinel-1B.
-* `[IW/EW]`: Indicates the product type, where `IW` stands for Interferometric Wide swath and `EW` for Extra-Wide swath.
-* `[TTTR]`: Indicates the product type and resolution. The product types can be `RAW`, `SLC`, `GRD`, or `OCN`. The resolution `R` can be `F` (full), `H` (high), or `M` (medium).
-* `[LFPP]`: Indicates the processing level L, the product class F, and the polarization PP. L can be `1` or `2`, F can be `S` (standard) or `A` (annotation), and PP can be `SH` (single HH), `SV` (single VV), `DH` (dual HH + HV), or `DV` (dual VV + VH).
-* `[YYYYMMDD]T[HHMMSS]`: Indicates the start and stop date and time of the acquisition (respectively), where `YYYY` is the year, `MM` is the month, `DD` is the day, and `HHMMSS` is the hour, minute, and second.
-* `[OOOOOO]`: Indicates the absolute orbit number of the product.
-* `[DDDDDD]`: Indicates the mission data-take identifier.
-* `[CCCC]`: Indicates the product unique identifier.
+<img align="center" src="../images/tiposdatosvectoriales.png"  vspace="10" width="300">
 
-Example: `S1A_IW_GRDH_1SSH_20201231T155959_20201231T160004_031117_03F1E1.zip`
+## Recopilación de información vectorial
 
-This file name corresponds to a Level 1 Standard Sentinel-1A product acquired on December 31st, 2020, 15:59:59 UTC, with the Interferometric Wide swath mode, the Ground Range Detected High resolution mode, and with single HH polarization.
+Para recopilar información vectorial geoespacial, es posible utilizar varias herramientas y recursos. Algunos ejemplos:
 
-It's worth noting that the format of the file name may change depending on the specific mission or the data provider. It is recommended to consult with the data provider or refer to the documentation provided to get a better understanding of the file naming conventions.
+1. **MyGeodata Cloud:** Esta es una interfaz en línea donde puedes explorar datos de otros usuarios, cargar tus propios datos, administrarlos o mostrarlos en un mapa.
+2. **QGIS:** Con QGIS, puedes abrir mapas digitales en la computadora, crear nueva información espacial y realizar análisis espacial.
+3. **R:** Hoy en día, R cuenta con un conjunto de librerías diseñadas exclusivamente para trabajar con datos geoespaciales.
+4. **Google Earth Engine:**  Contiene colecciones de datos cargadas por instituciones oficiales y datos de otros usuarios de manera colaborativa.
+5. **Open Street Map:**  Contiene colecciones de datos de superficie urbana de manera colaborativa.
+6. **SEDAC:**  Centro de datos de la NASA que provee datos socioeconómicos georreferenciados.
+7. **AIDDATA:** Extraer datos de límites administrativos.
+8. **MapBiomas:**Información registrada de vectores de referencia nacional países de América del Sur
+
+
+<img align="center" src="../images/datosadministrativo.png"  vspace="10" width="600">
+
+The Global Administrative Unit Layers (GAUL). *Source: United Nations & FAO, GEE.* 
+
+
+### Características, Limitaciones y Ventajas de los formatos de datos vectoriales
+
+Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos, incluyendo GeoJSON, shapefiles, MapInfo, GML, geodatabase, KML y otros formatos compatibles con la biblioteca GDAL2. Estos datos se pueden descargar y luego importar a las herramientas mencionadas anteriormente para su análisis y visualización.
+
+### Formatos más utilizados
+
+| Formato| Ventajas | Limitaciones                              |
+|------|-----------------|------------------------------------------|
+| CSV: Los archivos CSV son archivos de texto plano donde las comas se utilizan para delimitar los datos. Son ampliamente utilizados en diversas industrias para intercambiar datos debido a su formato simple y estandarizado.   | Son eficientes para almacenar y transferir datos entre diferentes aplicaciones. Son fáciles de leer y procesar por la mayoría de las aplicaciones de software      | No tienen soporte nativo para almacenar información espacial. Para almacenar datos espaciales, generalmente se utilizan en combinación con otros formatos o estándares, como WKT (Well-Known Text) para representar geometrías.                     |
+| KML: (Keyhole Markup Language) es un formato basado en XML utilizado para mostrar datos geográficos en navegadores terrestres como Google Earth. Permite a los usuarios crear y compartir información geoespacial, incluyendo puntos, líneas, imágenes, polígonos y modelos 3D    | A diferencia de un shapefile, un archivo KML puede definir simbología, etiquetado y transparencia. También es capaz de agregar superposiciones de iconos y gráficos      |  No tiene una tabla de atributos asociada y no puede producir una salida dinámica por sí solo, ya que es un lenguaje estático                                        |
+| GeoJSON: Es un formato para codificar estructuras de datos geoespaciales utilizando JavaScript Object Notation (JSON). Es ampliamente utilizado en la comunidad geoespacial y se considera el estándar para representar e intercambiar datos geoespaciales en la web  | Soporta varios tipos de geometrías, como puntos, líneas y polígonos, y puede incluir propiedades y atributos adicionales para cada característica. Es compatible con herramientas populares de análisis de datos, como GeoPandas de Python o el paquete sf de R   | Al igual que KML, GeoJSON es un formato estático y no puede producir una salida dinámica por sí solo           |
+| Zipped Shapefile: Los shapefiles son un formato de almacenamiento de datos vectoriales geoespaciales. Cada shapefile representa un solo tipo de geometría: puntos, líneas o polígonos   | Son rápidos de dibujar y editar. Los shapefiles manejan características individuales que se superponen o que son no contiguas. Requieren menos espacio en disco y son más fáciles de leer y escribir      | No pueden almacenar valores nulos, ni anotaciones o características de red. Los nombres de los campos dentro de la tabla de atributos están limitados a diez caracteres |
+| HTML: Es un lenguaje de marcado que se utiliza para crear la estructura de una página web. Es ampliamente utilizado y soportado por todos los navegadores | Es fácil de usar, aprender e implementar. No se requiere software especial. Contiene potentes facilidades de formato de texto  | No puede producir una salida dinámica por sí solo, ya que es un lenguaje estático. Hacer la estructura de los documentos HTML puede ser difícil de entender 
