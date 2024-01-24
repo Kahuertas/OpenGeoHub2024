@@ -19,8 +19,6 @@ Los datos ráster son una forma de representar información geoespacial en un fo
 ## Interés para el control público
 La importancia de los datos ráster en los Sistemas de Información Geográfica (GIS) radica en su capacidad para representar datos geoespaciales de manera detallada y precisa. Los datos ráster permiten a los usuarios visualizar y analizar patrones geoespaciales y relaciones en los datos. Esto es especialmente útil en aplicaciones como la modelización del terreno, el análisis de la cobertura del suelo, la modelización del clima, entre otros. 
 
-The ASF DAAC is not limited to data from NASA-led satellite missions. It contains data from a wide range of satellites, including but not limited to: Sentinel-1, RADARSAT-1, European Remote Sensing Satellite-1 and -2 (ERS-1 and -2), ALOS PALSAR, Japanese Earth Resource Satellite-1 (JERS-1), SMAP, and Seasat, in addition to the airborne sensors AirSAR and UAVSAR.
-
 #### Exercise 1.2 Access SAR data using the ASF DAAC.
 1. Navigate the ASF Data Portal: [http://vertex.daac.asf.alaska.edu/](http://vertex.daac.asf.alaska.edu/)
 2. In the upper search panel, set the `Search Type` to `Geographic Search` and the `Dataset` to `Sentinel-1`. 
