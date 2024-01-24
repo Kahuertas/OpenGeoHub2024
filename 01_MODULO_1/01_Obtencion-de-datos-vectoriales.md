@@ -38,18 +38,7 @@ Cuando la geometría de un objeto espacial consiste en un solo vértice, se cono
 
 <img align="center" src="../images/tiposdatosvectoriales.png"  vspace="10" width="300">
 
-Optical imagery (left) vs. radar imagery (right) of the Kliuchevskoi Volcano erupting. *Source: Michigan Tech Volcanology*
-
-
-These advantages are very powerful, though there are always multiple sides to consider when selecting the correct type of data for your research project. Let’s examine some of the cons of radar data.
-
-1. **Challenging interpretation.** Unlike optical imagery, which most people can intuitively interpret as it appears very similar to a photograph taken with one’s cell phone, radar imagery is not as easy to understand immediately. It contains information about energy outside of the visible light spectrum, and so it often requires more training for a user to understand what they are looking at in a radar image.
-2. **Speckling.** Radar images often appear grainier than optical imagery.
-3. **Topographical effects.** Topography has a greater effect on radar imagery than optical imagery, as the terrain can reflect the energy radars measure and thus distort the image. 
-
-Given these advantages and disadvantages, let’s understand why they exist in the first place. The major driver behind these differences is the way the data is collected. 
-
-## Data Collection
+## Recopilación de información vectorial
 ### Passive vs. Active Measurements
 This concept should sound familiar, as we briefly discussed it in the Introduction to Remote Sensing lesson. It is a key difference, however, so we will discuss it far more in depth here.
 
