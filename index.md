@@ -12,7 +12,7 @@ nav_order: 1
 
 Proyecto Fortalecimiento del Control Externo para la Prevención y Combate Eficaz de la Corrupción, fruto de la cooperación entre la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores - (OLACEFS).
 
-<img align="center" src="images/image89.gif" vspace="100" width="3000">
+<img align="center" src="images/image89.gif" vspace="10" width="3000">
 
 La iniciativa OpenGeoHub forma parte del esfuerzo que la OLACEFS viene emprendiendo desde 2016 en el sentido de desarrollar competencias geoespaciales de los funcionarios de las Entidades Fiscalizadoras Superiores (EFS) de la región.
 
