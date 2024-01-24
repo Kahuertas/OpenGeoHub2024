@@ -11,7 +11,7 @@ Welcome to an Introduction to Synthetic Aperture Radar (SAR)! This workshop will
 
 ## Descargar versión estable de QGIS
 1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
-2. Download [SNAP software](http://step.esa.int/main/download/snap-download/). Select the `Sentinel Toolboxes Main Download` option for your device type.
+2. En la sección de “Descargas de instalación”, encontrarás las opciones para diferentes sistemas operativos. Si estás usando Windows, debes hacer clic en `Descarga para Windows` o seleccionar Mac o Linux.
 3. Create a folder called `intro-radar-data` on your Desktop.
 
 ## Objectives
