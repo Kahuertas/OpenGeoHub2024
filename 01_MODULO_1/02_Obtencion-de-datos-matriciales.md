@@ -5,7 +5,7 @@ parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctic
 nav_order: 2
 ---
 
-# Data Access
+# Obtención de datos matriciales (ráster)
 You can access SAR data from a number of different data portals. SAR data is available on both of the platforms we explored in the Introduction to Remote Sensing lesson: EarthExplorer and Copernicus Open Access Hub. In this lesson, however, we will examine two other data sources that are particularly useful for SAR data.
 
 ## Earthdata 
