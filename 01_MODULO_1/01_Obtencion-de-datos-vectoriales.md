@@ -57,7 +57,7 @@ Para recopilar información vectorial geoespacial, es posible utilizar varias he
 The Global Administrative Unit Layers (GAUL). *Source: United Nations & FAO, GEE.* 
 
 
-### Características, Límitaciones y Ventajas
+### Características, Limitaciones y Ventajas de los formatos de datos vectoriales
 
 Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos, incluyendo GeoJSON, shapefiles, MapInfo, GML, geodatabase, KML y otros formatos compatibles con la biblioteca GDAL2. Estos datos se pueden descargar y luego importar a las herramientas mencionadas anteriormente para su análisis y visualización.
 
