@@ -65,7 +65,7 @@ Los datos geoespaciales vectoriales suelen estar disponibles en varios formatos,
 
 | Formato| Ventajas | Limitaciones                              |
 |------|-----------------|------------------------------------------|
-| Ka   | 0.8 to 1.1      | high resolution data                     |
+| CSV: Los archivos CSV son archivos de texto plano donde las comas se utilizan para delimitar los datos. Son ampliamente utilizados en diversas industrias para intercambiar datos debido a su formato simple y estandarizado.   | Son eficientes para almacenar y transferir datos entre diferentes aplicaciones. Son fáciles de leer y procesar por la mayoría de las aplicaciones de software      | No tienen soporte nativo para almacenar información espacial. Para almacenar datos espaciales, generalmente se utilizan en combinación con otros formatos o estándares, como WKT (Well-Known Text) para representar geometrías.                     |
 | K    | 1.1 to 1.7      |                                          |
 | Ku   | 1.7 to 2.4      | glaciology, snow cover mapping           |
 | X    | 2.4 to 3.8      | agriculture, ocean, high resolution data |
