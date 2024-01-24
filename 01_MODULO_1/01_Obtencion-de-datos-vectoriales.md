@@ -11,8 +11,6 @@ Los datos vectoriales son una forma de representar características del mundo re
 
 <img align="center" src="../images/datosvectoriales.png" vspace="10" width="700"> 
 
-<img align="center" src="../images/image89.gif" vspace="10" width="300">
-
 ## Descargar versión estable de QGIS
 1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
 2. En la sección de “Descargas de instalación”, encontrarás las opciones para diferentes sistemas operativos. Si estás usando Windows, debes hacer clic en `Descarga para Windows` o seleccionar Mac o Linux.
