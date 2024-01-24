@@ -43,12 +43,14 @@ Cuando la geometría de un objeto espacial consiste en un solo vértice, se cono
 Para recopilar información vectorial geoespacial, es posible utilizar varias herramientas y recursos. Algunos ejemplos:
 
 1. **MyGeodata Cloud:** Esta es una interfaz en línea donde puedes explorar datos de otros usuarios, cargar tus propios datos, administrarlos o mostrarlos en un mapa.
-2. **QGIS:** Es una herramienta de acceso abierto que pertenece a la categoría de Sistemas de Información Geográfica o GIS por sus siglas en inglés. Con QGIS, puedes abrir mapas digitales en la computadora, crear nueva información espacial y realizar análisis espacial.
-3. **R:**  R es un lenguaje de programación con enfoque al análisis estadístico. Hoy en día, R cuenta con un conjunto de librerías diseñadas exclusivamente para trabajar con datos geoespaciales.
+2. **QGIS:** Con QGIS, puedes abrir mapas digitales en la computadora, crear nueva información espacial y realizar análisis espacial.
+3. **R:** Hoy en día, R cuenta con un conjunto de librerías diseñadas exclusivamente para trabajar con datos geoespaciales.
 4. **Google Earth Engine:**  Contiene colecciones de datos cargadas por instituciones oficiales y datos de otros usuarios de manera colaborativa.
 5. **Open Street Map:**  Contiene colecciones de datos de superficie urbana de manera colaborativa.
 6. **SEDAC:**  Centro de datos de la NASA que provee datos socioeconómicos georreferenciados.
 7. **AIDDATA:** Extraer datos de límites administrativos.
+8. **MapBiomas:**Información registrada de vectores de referencia nacional países de América del Sur
+
 
 <img align="center" src="../images/datosadministrativo.png"  vspace="10" width="600">
 
