@@ -5,7 +5,7 @@ parent: Módulo 1 - Obtención de datos y Operaciones Análiticas en la Práctic
 nav_order: 1
 ---
 
-# Introducción - Obtención de datos vectoriales
+# Obtención de datos vectoriales
 
 Los datos vectoriales son una forma de representar características del mundo real dentro del entorno de un Sistema de Información Geográfica (SIG). Los objetos espaciales vectoriales tienen atributos, que consisten en texto o información numérica que describe los objetos espaciales. Un objeto espacial es algo que puede verse en el paisaje. 
 
