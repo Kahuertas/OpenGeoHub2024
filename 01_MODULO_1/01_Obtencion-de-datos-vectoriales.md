@@ -9,7 +9,7 @@ nav_order: 1
 
 Los datos vectoriales son una forma de representar características del mundo real dentro del entorno de un Sistema de Información Geográfica (SIG). Los objetos espaciales vectoriales tienen atributos, que consisten en texto o información numérica que describe los objetos espaciales. Un objeto espacial es algo que puede verse en el paisaje. 
 
-<img align="center" src="../images/datosvectoriales.png" vspace="10" width="700"> 
+<img align="center" src="../images/datosvectoriales.png" vspace="10" width="2000"> 
 
 ## Descargar versión estable de QGIS
 1. Ir a la página de descargas de QGIS. [Descargar QGIS](https://qgis.org/es/site/forusers/download.html).
@@ -36,7 +36,7 @@ Cuando la geometría de un objeto espacial consiste en un solo vértice, se cono
 3. **Polígonos:**  Los polígonos se utilizan para representar áreas. Estos son conjuntos de líneas que forman una forma cerrada. Por ejemplo, podrían representar áreas geográficas como montañas, masas de agua, o los límites de una ciudad.
 
 
-<img align="center" src="../images/tiposdatosvectoriales.png"  vspace="10" width="600">
+<img align="center" src="../images/tiposdatosvectoriales.png"  vspace="10" width="300">
 
 Optical imagery (left) vs. radar imagery (right) of the Kliuchevskoi Volcano erupting. *Source: Michigan Tech Volcanology*
 
