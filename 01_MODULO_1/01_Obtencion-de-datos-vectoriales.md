@@ -50,9 +50,9 @@ Para recopilar información vectorial geoespacial, es posible utilizar varias he
 6. **SEDAC:**  Centro de datos de la NASA que provee datos socioeconómicos georreferenciados.
 7. **AIDDATA:** Extraer datos de límites administrativos.
 
-<img align="center" src="../images/intro-sar/side-looking-radar.png"  vspace="10" width="600">
+<img align="center" src="../images/datosadministrativo.png"  vspace="10" width="600">
 
-Side-looking radar. *Source: Side looking airborne radar, Charly Whisky.* 
+The Global Administrative Unit Layers (GAUL). *Source: United Nations & FAO, GEE.* 
 
 
 ### What do radars measure?
