@@ -7,9 +7,6 @@ nav_order: 1
 # Instrucción y mentoría para el desarrollo de competencias geoespaciales para el control público
 
 <img align="center" src="images/image89.gif" vspace="10" width="3000">
-<p align="center">
-Rondonia - Brasil
-<p/>
 
 # Enero 2024 - Abril 2024
 
